@@ -1,0 +1,12 @@
+using OpenQA.Selenium.Chrome;
+
+namespace Diploma.Parser.Configurations;
+
+public class CuponConfiguration
+{
+    public string name { get; set;}
+    public string url { get; set;}
+    public string cuponsPath { get; set;}
+    public string[] chromeOptions { get; set;}
+    public string imagePageUrl { get; set;}
+}

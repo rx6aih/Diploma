@@ -1,0 +1,208 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/shmi/RiderProjects/Diploma/Diploma.Parser/Diploma.Parser.csproj": {}
+  },
+  "projects": {
+    "/home/shmi/RiderProjects/Diploma/Diploma.API/Diploma.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shmi/RiderProjects/Diploma/Diploma.API/Diploma.API.csproj",
+        "projectName": "Diploma.API",
+        "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.API/Diploma.API.csproj",
+        "packagesPath": "/home/shmi/.nuget/packages/",
+        "outputPath": "/home/shmi/RiderProjects/Diploma/Diploma.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shmi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "DotNetSeleniumExtras.WaitHelpers": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.29.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.112/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj",
+        "projectName": "Diploma.DAL",
+        "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj",
+        "packagesPath": "/home/shmi/.nuget/packages/",
+        "outputPath": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shmi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.112/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/shmi/RiderProjects/Diploma/Diploma.Parser/Diploma.Parser.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/shmi/RiderProjects/Diploma/Diploma.Parser/Diploma.Parser.csproj",
+        "projectName": "Diploma.Parser",
+        "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.Parser/Diploma.Parser.csproj",
+        "packagesPath": "/home/shmi/.nuget/packages/",
+        "outputPath": "/home/shmi/RiderProjects/Diploma/Diploma.Parser/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/shmi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/shmi/RiderProjects/Diploma/Diploma.API/Diploma.API.csproj": {
+                "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.API/Diploma.API.csproj"
+              },
+              "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj": {
+                "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.112/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

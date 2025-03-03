@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Parser", "Diploma.Parser\Diploma.Parser.csproj", "{505E1BE3-1A06-4517-9601-673303DE768C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.API", "Diploma.API\Diploma.API.csproj", "{702A2D34-5613-4851-B878-DAE375848730}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.DAL", "Diploma.DAL\Diploma.DAL.csproj", "{DB1B027A-5528-4FFE-9948-EAD9D8C39407}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{505E1BE3-1A06-4517-9601-673303DE768C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{505E1BE3-1A06-4517-9601-673303DE768C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{505E1BE3-1A06-4517-9601-673303DE768C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{505E1BE3-1A06-4517-9601-673303DE768C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{702A2D34-5613-4851-B878-DAE375848730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{702A2D34-5613-4851-B878-DAE375848730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{702A2D34-5613-4851-B878-DAE375848730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{702A2D34-5613-4851-B878-DAE375848730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB1B027A-5528-4FFE-9948-EAD9D8C39407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1B027A-5528-4FFE-9948-EAD9D8C39407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1B027A-5528-4FFE-9948-EAD9D8C39407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1B027A-5528-4FFE-9948-EAD9D8C39407}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

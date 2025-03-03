@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "WQdI0RaTCmOzOY2Wqq/++pWkEO6kB8/B1COQFZ9aKvE=",
+  "Source": "Diploma.Parser",
+  "BasePath": "_content/Diploma.Parser",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/home/shmi/RiderProjects/Diploma/Diploma.API/Diploma.API.csproj",
+      "Version": 2,
+      "Source": "Diploma.API",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,6 @@
+@Diploma.API_HostAddress = http://localhost:5022
+
+GET {{Diploma.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
