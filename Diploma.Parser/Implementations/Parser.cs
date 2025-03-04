@@ -13,6 +13,6 @@ public class Parser<T>([Required]IParserStrategy<T> parserStrategy,
     public async Task<List<T>> Parse()
     {
         ChromeDriver driver = await parserStrategy.BuildDriver(configuration.url, configuration.chromeOptions);
-        return await parserStrategy.GetElementsList(configuration.cuponsPath, driver, configuration.imagePageUrl);
+        return await parserStrategy.GetElementsList(configuration.cuponsClassName, driver, configuration.imagePageUrl);
     }
 }

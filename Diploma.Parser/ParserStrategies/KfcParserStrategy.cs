@@ -9,13 +9,13 @@ namespace Diploma.Parser.ParserStrategies;
 
 public class KfcParserStrategy : IParserStrategy<KfcCupon>
 {
-    public Task<List<KfcCupon>> GetElementsList(string elementsXPath, ChromeDriver driver, string imagePageLink = "")
+    public Task<List<KfcCupon>> GetElementsList(string elementsClassName, ChromeDriver driver, string imagePageLink = "")
     {
         List<KfcCupon> cuponsList = new List<KfcCupon>();
         
         WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
         ReadOnlyCollection<IWebElement> cuponsListMarkup = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.PresenceOfAllElementsLocatedBy(
-            By.ClassName("RTQ7M5RnH1t")));
+            By.ClassName(elementsClassName)));
         
         foreach (IWebElement element in cuponsListMarkup)
         {
