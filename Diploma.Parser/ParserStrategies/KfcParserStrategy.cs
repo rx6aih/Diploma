@@ -9,7 +9,7 @@ namespace Diploma.Parser.ParserStrategies;
 
 public class KfcParserStrategy : IParserStrategy<KfcCupon>
 {
-    public Task<List<KfcCupon>> GetElementsList(string elementsClassName, ChromeDriver driver, string imagePageLink = "")
+    public Task<List<KfcCupon>> GetElementsList(string elementsClassName, ChromeDriver driver)
     {
         List<KfcCupon> cuponsList = new List<KfcCupon>();
         

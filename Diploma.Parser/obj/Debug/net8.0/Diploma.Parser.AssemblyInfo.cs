@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Diploma.Parser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f405509863404493b3991a4175616900fb47a41b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4741c21d97503ded4040b4256dd0b873a6fb514")]
 [assembly: System.Reflection.AssemblyProductAttribute("Diploma.Parser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Diploma.Parser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

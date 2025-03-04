@@ -8,5 +8,4 @@ public class CuponConfiguration
     public string url { get; set;}
     public string cuponsClassName { get; set;}
     public string[] chromeOptions { get; set;}
-    public string imagePageUrl { get; set;}
 }

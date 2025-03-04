@@ -28,4 +28,12 @@ public class ParserController(IOptions<ListCuponConfiguration> options) : Contro
             _cuponConfiguration.CuponConfiguration[1]);
         return Ok(await parser.Parse());
     }
+
+    [HttpGet("mac")]
+    public async Task<IActionResult> MacParse()
+    {
+        Parser<MacCupon> parser = new Parser<MacCupon>(new MacParserStrategy(),
+            _cuponConfiguration.CuponConfiguration[2]);
+        return Ok(await parser.Parse());
+    }
 }

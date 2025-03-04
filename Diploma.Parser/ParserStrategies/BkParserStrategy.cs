@@ -9,7 +9,7 @@ namespace Diploma.Parser.ParserStrategies;
 
 public class BkParserStrategy : IParserStrategy<BkCupon>
 {
-    public Task<List<BkCupon>> GetElementsList(string elementsClassName, ChromeDriver driver, string imagePageLink = "")
+    public Task<List<BkCupon>> GetElementsList(string elementsClassName, ChromeDriver driver)
     {
         List<BkCupon> cuponsList = new List<BkCupon>();
         

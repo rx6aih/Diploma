@@ -4,5 +4,4 @@ namespace Diploma.DAL.Entities.Implementations;
 
 public class MacCupon : Cupon
 {
-    
 }
