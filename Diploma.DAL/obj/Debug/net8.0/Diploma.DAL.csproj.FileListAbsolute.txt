@@ -9,3 +9,4 @@
 /home/shmi/RiderProjects/Diploma/Diploma.DAL/obj/Debug/net8.0/refint/Diploma.DAL.dll
 /home/shmi/RiderProjects/Diploma/Diploma.DAL/obj/Debug/net8.0/Diploma.DAL.pdb
 /home/shmi/RiderProjects/Diploma/Diploma.DAL/obj/Debug/net8.0/ref/Diploma.DAL.dll
+/home/shmi/RiderProjects/Diploma/Diploma.DAL/obj/Debug/net8.0/Diploma.DAL.sourcelink.json

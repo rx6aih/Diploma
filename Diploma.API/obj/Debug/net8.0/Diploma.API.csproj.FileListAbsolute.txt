@@ -36,3 +36,4 @@
 /home/shmi/RiderProjects/Diploma/Diploma.API/obj/Debug/net8.0/Diploma.API.pdb
 /home/shmi/RiderProjects/Diploma/Diploma.API/obj/Debug/net8.0/Diploma.API.genruntimeconfig.cache
 /home/shmi/RiderProjects/Diploma/Diploma.API/obj/Debug/net8.0/ref/Diploma.API.dll
+/home/shmi/RiderProjects/Diploma/Diploma.API/obj/Debug/net8.0/Diploma.API.sourcelink.json

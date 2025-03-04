@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Diploma.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bda05dbd5ba78bd0c1ac98b78d05924fb8352950")]
 [assembly: System.Reflection.AssemblyProductAttribute("Diploma.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Diploma.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

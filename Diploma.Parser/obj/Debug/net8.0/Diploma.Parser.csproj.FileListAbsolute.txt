@@ -43,3 +43,4 @@
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/obj/Debug/net8.0/Diploma.Parser.pdb
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/obj/Debug/net8.0/Diploma.Parser.genruntimeconfig.cache
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/obj/Debug/net8.0/ref/Diploma.Parser.dll
+/home/shmi/RiderProjects/Diploma/Diploma.Parser/obj/Debug/net8.0/Diploma.Parser.sourcelink.json

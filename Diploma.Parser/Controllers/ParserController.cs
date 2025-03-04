@@ -10,14 +10,14 @@ namespace Diploma.Parser.Controllers;
 
 [ApiController]
 [Route("Parser")]
-public class ParserController(IOptions<CuponConfiguration> options) : ControllerBase
+public class ParserController(IOptions<ListCuponConfiguration> options) : ControllerBase
 {
-    private readonly CuponConfiguration _cuponConfiguration = options.Value;
+    private readonly ListCuponConfiguration _cuponConfiguration = options.Value;
     [HttpGet("kfc")]
     public async Task<IActionResult> KfcParse()
     {
         Parser<KfcCupon> parser = new Parser<KfcCupon>(new KfcParserStrategy(),
-            _cuponConfiguration);
+            _cuponConfiguration.CuponConfiguration[0]);
         return Ok(await parser.Parse());
     }
 }

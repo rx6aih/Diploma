@@ -2,7 +2,7 @@ using Diploma.Parser.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<CuponConfiguration>(builder.Configuration.GetSection(nameof(CuponConfiguration)));
+builder.Services.Configure<ListCuponConfiguration>(builder.Configuration.GetSection(nameof(ListCuponConfiguration)));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

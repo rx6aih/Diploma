@@ -9,30 +9,28 @@ namespace Diploma.Parser.ParserStrategies;
 
 public class KfcParserStrategy : IParserStrategy<KfcCupon>
 {
-
-    public Task<ChromeDriver> BuildDriver(string url, string[] options = null)
-    {
-        ChromeOptions chromeOptions = new ChromeOptions();
-        foreach(string option in options)
-            chromeOptions.AddArguments(option);
-        
-        ChromeDriver driver = new ChromeDriver(chromeOptions);
-        driver.Navigate().GoToUrl(url);
-        return Task.FromResult(driver);
-    }
-
     public Task<List<KfcCupon>> GetElementsList(string elementsXPath, ChromeDriver driver, string imagePageLink = "")
     {
         List<KfcCupon> cuponsList = new List<KfcCupon>();
         
         WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
         ReadOnlyCollection<IWebElement> cuponsListMarkup = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.PresenceOfAllElementsLocatedBy(
-            By.XPath("//*[@id=\"root\"]/div/div[2]/div[2]/div[1]/a")));
-        foreach(IWebElement cupon in cuponsListMarkup)
+            By.ClassName("RTQ7M5RnH1t")));
+        
+        foreach (IWebElement element in cuponsListMarkup)
+        {
+            string link = element.FindElement(By.ClassName("_3nVETUX19Kp")).GetAttribute("style");
+            string fullDescription = element.FindElement(By.ClassName("_3POebZQSBG9")).Text;
+            
             cuponsList.Add(new KfcCupon()
             {
-                
+                Title = element.FindElement(By.ClassName("_2pr76I4WPmJ")).Text,
+                ImageUrl = link.Substring(23, link.Length-26),
+                Description = fullDescription,
+                Url = element.GetAttribute("href"),
+                Price = element.FindElement(By.ClassName("_1trEHSCHMhK")).FindElement(By.TagName("span")).Text
             });
+        }
         return Task.FromResult(cuponsList);
     }
 }
