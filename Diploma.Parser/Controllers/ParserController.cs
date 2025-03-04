@@ -20,4 +20,12 @@ public class ParserController(IOptions<ListCuponConfiguration> options) : Contro
             _cuponConfiguration.CuponConfiguration[0]);
         return Ok(await parser.Parse());
     }
+
+    [HttpGet("bk")]
+    public async Task<IActionResult> BkParse()
+    {
+        Parser<BkCupon> parser = new Parser<BkCupon>(new BkParserStrategy(), 
+            _cuponConfiguration.CuponConfiguration[1]);
+        return Ok(await parser.Parse());
+    }
 }

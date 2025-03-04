@@ -14,5 +14,5 @@ public interface IParserStrategy<T>
         driver.Navigate().GoToUrl(url);
         return Task.FromResult(driver);
     }
-    Task<List<T>> GetElementsList(string elementsXPath, ChromeDriver driver, string imagePageLink = "");
+    Task<List<T>> GetElementsList(string elementsClassName, ChromeDriver driver, string imagePageLink = "");
 }
