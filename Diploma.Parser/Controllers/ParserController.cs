@@ -18,7 +18,13 @@ public class ParserController(IOptions<ListCuponConfiguration> options) : Contro
     {
         Parser<KfcCupon> parser = new Parser<KfcCupon>(new KfcParserStrategy(),
             _cuponConfiguration.CuponConfiguration[0]);
-        return Ok(await parser.Parse());
+        
+        List<KfcCupon> cupons = await parser.Parse();
+        
+        if(cupons.Count == 0)
+            return NotFound("No cupons found, inner exception");
+        
+        return Ok(cupons);
     }
 
     [HttpGet("bk")]
@@ -26,7 +32,13 @@ public class ParserController(IOptions<ListCuponConfiguration> options) : Contro
     {
         Parser<BkCupon> parser = new Parser<BkCupon>(new BkParserStrategy(), 
             _cuponConfiguration.CuponConfiguration[1]);
-        return Ok(await parser.Parse());
+        
+        List<BkCupon> cupons = await parser.Parse();
+        
+        if(cupons.Count == 0)
+            return NotFound("No cupons found, inner exception");
+        
+        return Ok(cupons);
     }
 
     [HttpGet("mac")]
@@ -34,6 +46,12 @@ public class ParserController(IOptions<ListCuponConfiguration> options) : Contro
     {
         Parser<MacCupon> parser = new Parser<MacCupon>(new MacParserStrategy(),
             _cuponConfiguration.CuponConfiguration[2]);
-        return Ok(await parser.Parse());
+        
+        List<MacCupon> cupons = await parser.Parse();
+        
+        if(cupons.Count == 0)
+            return NotFound("No cupons found, inner exception");
+        
+        return Ok(cupons);
     }
 }

@@ -9,24 +9,25 @@ namespace Diploma.Parser.ParserStrategies;
 
 public class MacParserStrategy : IParserStrategy<MacCupon>
 {
+    private List<MacCupon> CuponsList { get; } = new();
+
     public Task<List<MacCupon>> GetElementsList(string elementsClassName, ChromeDriver driver)
     {
-        List<MacCupon> cuponsList = new List<MacCupon>();
         
-        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
         ReadOnlyCollection<IWebElement> cuponsListMarkup = wait.Until(
             SeleniumExtras.WaitHelpers.ExpectedConditions.PresenceOfAllElementsLocatedBy(
                 By.ClassName(elementsClassName)));
 
         foreach (IWebElement element in cuponsListMarkup)
         {
-            cuponsList.Add(new MacCupon()
+            CuponsList.Add(new MacCupon()
             {
                 ImageUrl = element.FindElement(By.ClassName("img-fluid")).GetAttribute("src"),
                 Title = element.GetAttribute("title")
             });
         }
-        return Task.FromResult(cuponsList);
+        return Task.FromResult(CuponsList);
     }
 }
 

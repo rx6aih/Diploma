@@ -9,21 +9,21 @@ namespace Diploma.Parser.ParserStrategies;
 
 public class BkParserStrategy : IParserStrategy<BkCupon>
 {
+    private List<BkCupon> CuponsList { get;} = new();
+
     public Task<List<BkCupon>> GetElementsList(string elementsClassName, ChromeDriver driver)
     {
-        List<BkCupon> cuponsList = new List<BkCupon>();
-        
         ReadOnlyCollection<IWebElement> cuponsListMarkup = driver.FindElements(By.ClassName(elementsClassName));
         
         foreach (IWebElement element in cuponsListMarkup)
         {
-            cuponsList.Add(new BkCupon()
+            CuponsList.Add(new BkCupon()
             {
                 Title = element.FindElement(By.ClassName("bk-coupon-item__title")).Text,
                 ImageUrl = element.FindElement(By.ClassName("image-placeholder__img")).GetAttribute("src"),
                 Price = element.FindElement(By.ClassName("bk-coupon-item__price")).Text,
             });
-        }
-        return Task.FromResult(cuponsList);
+        } 
+        return Task.FromResult(CuponsList);
     }
 }

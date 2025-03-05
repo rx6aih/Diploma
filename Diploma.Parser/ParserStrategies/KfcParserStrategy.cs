@@ -9,12 +9,13 @@ namespace Diploma.Parser.ParserStrategies;
 
 public class KfcParserStrategy : IParserStrategy<KfcCupon>
 {
+    private List<KfcCupon> CuponsList { get; } = new();
     public Task<List<KfcCupon>> GetElementsList(string elementsClassName, ChromeDriver driver)
     {
-        List<KfcCupon> cuponsList = new List<KfcCupon>();
         
         WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
-        ReadOnlyCollection<IWebElement> cuponsListMarkup = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.PresenceOfAllElementsLocatedBy(
+        ReadOnlyCollection<IWebElement> cuponsListMarkup = wait.Until(
+            SeleniumExtras.WaitHelpers.ExpectedConditions.PresenceOfAllElementsLocatedBy(
             By.ClassName(elementsClassName)));
         
         foreach (IWebElement element in cuponsListMarkup)
@@ -22,7 +23,7 @@ public class KfcParserStrategy : IParserStrategy<KfcCupon>
             string link = element.FindElement(By.ClassName("_3nVETUX19Kp")).GetAttribute("style");
             string fullDescription = element.FindElement(By.ClassName("_3POebZQSBG9")).Text;
             
-            cuponsList.Add(new KfcCupon()
+            CuponsList.Add(new KfcCupon()
             {
                 Title = element.FindElement(By.ClassName("_2pr76I4WPmJ")).Text,
                 ImageUrl = link.Substring(23, link.Length-26),
@@ -31,6 +32,6 @@ public class KfcParserStrategy : IParserStrategy<KfcCupon>
                 Price = element.FindElement(By.ClassName("_1trEHSCHMhK")).FindElement(By.TagName("span")).Text
             });
         }
-        return Task.FromResult(cuponsList);
+        return Task.FromResult(CuponsList);
     }
 }
