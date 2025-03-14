@@ -554,11 +554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/shmi/RiderProjects/Diploma/Diploma.API/Diploma.API.csproj",
-      "projectName": "Diploma.API",
-      "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.API/Diploma.API.csproj",
+      "projectUniqueName": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj",
+      "projectName": "Diploma.CuponManagment",
+      "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj",
       "packagesPath": "/home/shmi/.nuget/packages/",
-      "outputPath": "/home/shmi/RiderProjects/Diploma/Diploma.API/obj/",
+      "outputPath": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/shmi/.nuget/NuGet/NuGet.Config"
@@ -621,7 +621,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.112/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.114/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

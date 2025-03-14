@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Parser", "Diploma.Parser\Diploma.Parser.csproj", "{505E1BE3-1A06-4517-9601-673303DE768C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.API", "Diploma.API\Diploma.API.csproj", "{702A2D34-5613-4851-B878-DAE375848730}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.CuponManagment", "Diploma.CuponManagment\Diploma.CuponManagment.csproj", "{702A2D34-5613-4851-B878-DAE375848730}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.DAL", "Diploma.DAL\Diploma.DAL.csproj", "{DB1B027A-5528-4FFE-9948-EAD9D8C39407}"
 EndProject

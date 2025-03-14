@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj": {}
+    "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj": {}
   },
   "projects": {
-    "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj": {
+    "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj",
-        "projectName": "Diploma.DAL",
-        "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj",
+        "projectUniqueName": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj",
+        "projectName": "Diploma.CuponManagment",
+        "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj",
         "packagesPath": "/home/shmi/.nuget/packages/",
-        "outputPath": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/obj/",
+        "outputPath": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/shmi/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,24 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "DotNetSeleniumExtras.WaitHelpers": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.29.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -49,6 +67,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

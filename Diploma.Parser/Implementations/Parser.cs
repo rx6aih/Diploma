@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using Diploma.API.Interfaces;
+using Diploma.Parser.Interfaces;
 using Diploma.DAL.Entities.Abstract;
 using Diploma.Parser.Configurations;
 using OpenQA.Selenium;

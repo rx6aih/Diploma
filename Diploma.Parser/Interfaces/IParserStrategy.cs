@@ -1,7 +1,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace Diploma.API.Interfaces;
+namespace Diploma.Parser.Interfaces;
 
 public interface IParserStrategy<T>
 {

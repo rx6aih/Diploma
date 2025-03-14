@@ -7,12 +7,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Confluent.Kafka" Version="2.8.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.12"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Diploma.API\Diploma.API.csproj" />
+      <ProjectReference Include="..\Diploma.CuponManagment\Diploma.CuponManagment.csproj" />
       <ProjectReference Include="..\Diploma.DAL\Diploma.DAL.csproj" />
     </ItemGroup>
 

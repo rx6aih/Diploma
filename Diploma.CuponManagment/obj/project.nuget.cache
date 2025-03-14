@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jMi2gWvEQYQ=",
+  "dgSpecHash": "PEctV6YsKyo=",
   "success": true,
-  "projectFilePath": "/home/shmi/RiderProjects/Diploma/Diploma.API/Diploma.API.csproj",
+  "projectFilePath": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj",
   "expectedPackageFiles": [
     "/home/shmi/.nuget/packages/dotnetseleniumextras.waithelpers/3.11.0/dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "/home/shmi/.nuget/packages/microsoft.aspnetcore.openapi/8.0.12/microsoft.aspnetcore.openapi.8.0.12.nupkg.sha512",

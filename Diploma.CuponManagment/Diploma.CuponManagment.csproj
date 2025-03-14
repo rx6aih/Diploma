@@ -4,6 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Diploma.API</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -11,6 +12,16 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.12"/>
         <PackageReference Include="Selenium.WebDriver" Version="4.29.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Confluent.Kafka">
+        <HintPath>..\..\..\.nuget\packages\confluent.kafka\2.8.0\lib\net8.0\Confluent.Kafka.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

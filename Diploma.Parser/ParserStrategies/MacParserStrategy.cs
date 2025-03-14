@@ -1,5 +1,5 @@
 using System.Collections.ObjectModel;
-using Diploma.API.Interfaces;
+using Diploma.Parser.Interfaces;
 using Diploma.DAL.Entities.Implementations;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
