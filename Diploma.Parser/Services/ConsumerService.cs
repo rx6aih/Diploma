@@ -1,6 +1,7 @@
 using System.Text.Json;
 using Confluent.Kafka;
 using Diploma.API.DataTransferObjects;
+using Diploma.API.Services;
 using Diploma.DAL.Entities.Implementations;
 using Diploma.Parser.Configurations;
 using Diploma.Parser.Controllers;
@@ -13,10 +14,10 @@ namespace Diploma.Parser.Services;
 public class ConsumerService(IOptions<ListCuponConfiguration> options) : IHostedService
 {
     private readonly string _groupId = "parserGroup";
-    private readonly string _bootstrapServers = "kafka:29092";
-    private readonly string _topic = "requireCupons";
+    private static readonly string _bootstrapServers = "kafka:29092";
+    private static readonly string _topic = "requireCupons";
 
-    private readonly ProducerService _producerService = new();
+    private readonly BaseProducerService<string> _producerService = new(_bootstrapServers, _topic);
     
     public Task StartAsync(CancellationToken cancellationToken)
     {
@@ -26,7 +27,7 @@ public class ConsumerService(IOptions<ListCuponConfiguration> options) : IHosted
 
     private async Task ConsumeMessageAsync(CancellationToken cancellationToken)
     {
-        ConsumerConfig config = new ConsumerConfig()
+        ConsumerConfig config = new()
         {
             GroupId = _groupId,
             BootstrapServers = _bootstrapServers,
@@ -65,7 +66,8 @@ public class ConsumerService(IOptions<ListCuponConfiguration> options) : IHosted
                             break;
                         } 
                     }
-                    await _producerService.Produce(cuponDtos);
+                    string cuponJson = JsonSerializer.Serialize(cuponDtos);
+                    await _producerService.Produce(cuponJson);
 
                 }
             }

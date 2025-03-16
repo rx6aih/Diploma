@@ -1,3 +1,7 @@
+using System.Text.Json;
+using Confluent.Kafka;
+using Diploma.API.DataTransferObjects;
+
 namespace Diploma.API.Services;
 
 public class ConsumerService : IHostedService
@@ -15,7 +19,34 @@ public class ConsumerService : IHostedService
     
     private async Task ConsumeMessageAsync(CancellationToken cancellationToken)
     {
-        
+        ConsumerConfig config = new()
+        {
+            GroupId = _groupId,
+            BootstrapServers = _bootstrapServers,
+            AutoOffsetReset = AutoOffsetReset.Latest
+        };
+
+        using (var consumerBuilder = new ConsumerBuilder<Ignore, string>(config).Build())
+        {
+            Thread.Sleep(8000);
+            consumerBuilder.Subscribe(_topic);
+            try
+            {
+                while (!cancellationToken.IsCancellationRequested)
+                {
+                    var consumer = consumerBuilder.Consume(cancellationToken);
+                    List<CuponDto>? cuponsList = JsonSerializer.Deserialize<List<CuponDto>?>(consumer.Message.Value);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Consumer cancelled");
+            }
+            finally
+            {
+                consumerBuilder.Close();
+            }
+        }
     }
     
     public Task StopAsync(CancellationToken cancellationToken)
