@@ -1,15 +1,15 @@
 {
   "Version": 1,
-  "Hash": "WQdI0RaTCmOzOY2Wqq/++pWkEO6kB8/B1COQFZ9aKvE=",
+  "Hash": "G97aSSvvnva4zy7d/CE+JBl0dmjJ5zs0TcmLVb7hD7Q=",
   "Source": "Diploma.Parser",
   "BasePath": "_content/Diploma.Parser",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/home/shmi/RiderProjects/Diploma/Diploma.API/Diploma.API.csproj",
+      "Identity": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj",
       "Version": 2,
-      "Source": "Diploma.API",
+      "Source": "Diploma.CuponManagment",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",

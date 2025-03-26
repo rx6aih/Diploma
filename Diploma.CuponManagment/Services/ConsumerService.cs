@@ -7,7 +7,7 @@ namespace Diploma.API.Services;
 public class ConsumerService : IHostedService
 {
     private readonly string _groupId = "parserGroup";
-    private readonly string _bootstrapServers = "kafka:29092";
+    private readonly string _bootstrapServers = "localhost:9092";
     private readonly string _topic = "replyCupons";
 
 
@@ -17,8 +17,10 @@ public class ConsumerService : IHostedService
         return Task.CompletedTask;
     }
     
-    private async Task ConsumeMessageAsync(CancellationToken cancellationToken)
+    private async Task<List<CuponDto>> ConsumeMessageAsync(CancellationToken cancellationToken)
     {
+        List<CuponDto>? cuponsList = null;
+        
         ConsumerConfig config = new()
         {
             GroupId = _groupId,
@@ -32,21 +34,23 @@ public class ConsumerService : IHostedService
             consumerBuilder.Subscribe(_topic);
             try
             {
-                while (!cancellationToken.IsCancellationRequested)
+                while (true /*!cancellationToken.IsCancellationRequested*/)
                 {
                     var consumer = consumerBuilder.Consume(cancellationToken);
-                    List<CuponDto>? cuponsList = JsonSerializer.Deserialize<List<CuponDto>?>(consumer.Message.Value);
+                    cuponsList = JsonSerializer.Deserialize<List<CuponDto>>(consumer.Message.Value);
+                    Console.WriteLine($"Consumed message: {consumer.Message.Value}");
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Consumer cancelled");
             }
-            finally
+            /*finally
             {
                 consumerBuilder.Close();
-            }
+            }*/
         }
+        return cuponsList;
     }
     
     public Task StopAsync(CancellationToken cancellationToken)

@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Confluent.Kafka" Version="2.8.0" />
         <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.12"/>
         <PackageReference Include="Selenium.WebDriver" Version="4.29.0" />
@@ -15,13 +16,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Reference Include="Confluent.Kafka">
         <HintPath>..\..\..\.nuget\packages\confluent.kafka\2.8.0\lib\net8.0\Confluent.Kafka.dll</HintPath>
       </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Diploma.DAL\Diploma.DAL.csproj" />
     </ItemGroup>
 
 </Project>

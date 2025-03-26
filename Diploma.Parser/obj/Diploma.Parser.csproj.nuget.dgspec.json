@@ -25,7 +25,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj": {
+                "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,6 +42,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
             "DotNetSeleniumExtras.WaitHelpers": {
               "target": "Package",
               "version": "[3.11.0, )"

@@ -14,10 +14,10 @@ namespace Diploma.Parser.Services;
 public class ConsumerService(IOptions<ListCuponConfiguration> options) : IHostedService
 {
     private readonly string _groupId = "parserGroup";
-    private static readonly string _bootstrapServers = "kafka:29092";
+    private static readonly string _bootstrapServers = "localhost:9092";
     private static readonly string _topic = "requireCupons";
 
-    private readonly BaseProducerService<string> _producerService = new(_bootstrapServers, _topic);
+    private readonly BaseProducerService<string> _producerService = new(_bootstrapServers, "replyCupons");
     
     public Task StartAsync(CancellationToken cancellationToken)
     {
@@ -41,7 +41,7 @@ public class ConsumerService(IOptions<ListCuponConfiguration> options) : IHosted
 
             try
             {
-                while (!cancellationToken.IsCancellationRequested)
+                while (true/*!cancellationToken.IsCancellationRequested*/)
                 {
                     var consumer = consumerBuilder.Consume(cancellationToken);
                     var restaurantCase = JsonSerializer.Deserialize<string?>(consumer.Message.Value);
@@ -65,6 +65,21 @@ public class ConsumerService(IOptions<ListCuponConfiguration> options) : IHosted
 
                             break;
                         } 
+                        case "bk":
+                        {
+                            Parser<BkCupon> parser = new Parser<BkCupon>(new BkParserStrategy(),
+                                options.Value.CuponConfiguration[1]);
+                            List<BkCupon> cupons = await parser.Parse();
+
+                            foreach (var cupon in cupons)
+                            {
+                                cuponDtos.Add(new CuponDto("bk",Description:"",
+                                    Title:cupon.Title, ImageUrl:cupon.ImageUrl, Price:cupon.Price, 
+                                    Url:""));
+                            }
+
+                            break;
+                        }
                     }
                     string cuponJson = JsonSerializer.Serialize(cuponDtos);
                     await _producerService.Produce(cuponJson);
@@ -75,10 +90,10 @@ public class ConsumerService(IOptions<ListCuponConfiguration> options) : IHosted
             {
                 Console.WriteLine("Consumer cancelled");
             }
-            finally
+            /*finally
             {
                 consumerBuilder.Close();
-            }
+            }*/
         }
     }
     

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "3JSsnneDPFYm6vbHiy8XZ3Ibolk3ZnZYkRoy34S62+w=",
-  "Source": "Diploma.API",
-  "BasePath": "_content/Diploma.API",
+  "Hash": "LB1tX8SSqig+UsOpkgQrDt22Kb04bRYI1y09nWRrXvM=",
+  "Source": "Diploma.CuponManagment",
+  "BasePath": "_content/Diploma.CuponManagment",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
