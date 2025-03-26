@@ -12,6 +12,7 @@ public class BkParserStrategy : IParserStrategy<BkCupon>
 
     public Task<List<BkCupon>> GetElementsList(string elementsClassName, ChromeDriver driver)
     {
+        Thread.Sleep(1000);
         ReadOnlyCollection<IWebElement> cuponsListMarkup = driver.FindElements(By.ClassName(elementsClassName));
         
         foreach (IWebElement element in cuponsListMarkup)

@@ -1,7 +1,7 @@
 using System.Text.Json;
 using Confluent.Kafka;
 
-namespace Diploma.API.Services;
+namespace Diploma.Utility.Kafka;
 
 public class BaseProducerService<T>(string bootstrapServers, string topic)
 {

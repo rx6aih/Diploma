@@ -1,5 +1,4 @@
 using Diploma.Parser.Configurations;
-using Diploma.Parser.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +7,6 @@ builder.Services.Configure<ListCuponConfiguration>(builder.Configuration.GetSect
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddHostedService<ConsumerService>();
 var app = builder.Build();
 
 

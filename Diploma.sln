@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.CuponManagment", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.DAL", "Diploma.DAL\Diploma.DAL.csproj", "{DB1B027A-5528-4FFE-9948-EAD9D8C39407}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Utility", "Diploma.Utility\Diploma.Utility.csproj", "{9D5D3B49-C804-4860-899A-941F5CC126A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{DB1B027A-5528-4FFE-9948-EAD9D8C39407}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB1B027A-5528-4FFE-9948-EAD9D8C39407}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB1B027A-5528-4FFE-9948-EAD9D8C39407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D5D3B49-C804-4860-899A-941F5CC126A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D5D3B49-C804-4860-899A-941F5CC126A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D5D3B49-C804-4860-899A-941F5CC126A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D5D3B49-C804-4860-899A-941F5CC126A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

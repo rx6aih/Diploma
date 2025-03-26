@@ -1,10 +1,10 @@
+using System.Text.Json;
 using Diploma.DAL.Entities.Implementations;
 using Diploma.Parser.Configurations;
 using Diploma.Parser.Implementations;
 using Diploma.Parser.ParserStrategies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using OpenQA.Selenium;
 
 namespace Diploma.Parser.Controllers;
 
@@ -38,7 +38,7 @@ public class ParserController(IOptions<ListCuponConfiguration> options) : Contro
         if(cupons.Count == 0)
             return NotFound("No cupons found, inner exception");
         
-        return Ok(cupons);
+        return Ok(JsonSerializer.Serialize(cupons));
     }
 
     [HttpGet("mac")]
