@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Diploma.DAL")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Diploma.Notification")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f53c8274598b32444bc2f03bbca08725db4fdb8")]
-[assembly: System.Reflection.AssemblyProductAttribute("Diploma.DAL")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Diploma.DAL")]
+[assembly: System.Reflection.AssemblyProductAttribute("Diploma.Notification")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Diploma.Notification")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

@@ -16,7 +16,6 @@ public class CuponController : ControllerBase
         HttpClient client = new HttpClient();
         client.BaseAddress = new Uri("http://localhost:5042");
         HttpResponseMessage result = await client.SendAsync(new HttpRequestMessage(HttpMethod.Get, "Parser/bk"));
-        var some = result.Content.ReadAsStringAsync().Result;
         List<BkCupon>? cupons = JsonSerializer.Deserialize<List<BkCupon>>(result.Content.ReadAsStringAsync().Result);
         return Ok(cupons);
     }

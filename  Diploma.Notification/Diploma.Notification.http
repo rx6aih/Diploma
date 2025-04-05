@@ -1,0 +1,6 @@
+@Diploma.Notification_HostAddress = http://localhost:5043
+
+GET {{Diploma.Notification_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
