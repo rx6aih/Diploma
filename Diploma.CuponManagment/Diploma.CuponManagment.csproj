@@ -23,6 +23,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Diploma.DAL\Diploma.DAL.csproj" />
+      <ProjectReference Include="..\Diploma.Utility\Diploma.Utility.csproj" />
     </ItemGroup>
 
 </Project>

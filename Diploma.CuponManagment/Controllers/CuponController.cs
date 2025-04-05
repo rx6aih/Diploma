@@ -2,6 +2,7 @@ using System.Text.Json;
 using Diploma.API.DataTransferObjects;
 using Diploma.API.Services;
 using Diploma.DAL.Entities.Implementations;
+using Diploma.Utility.ServiceCommunication;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Diploma.API.Controllers;
@@ -13,10 +14,9 @@ public class CuponController : ControllerBase
     [Route("Test")]
     public async Task<IActionResult> Test()
     {
-        HttpClient client = new HttpClient();
-        client.BaseAddress = new Uri("http://localhost:5042");
-        HttpResponseMessage result = await client.SendAsync(new HttpRequestMessage(HttpMethod.Get, "Parser/bk"));
-        List<BkCupon>? cupons = JsonSerializer.Deserialize<List<BkCupon>>(result.Content.ReadAsStringAsync().Result);
-        return Ok(cupons);
+        HttpCommunicator communicator = new HttpCommunicator();
+        return Ok(JsonSerializer.Deserialize<List<BkCupon>>(communicator
+               .Send("http://localhost:5042", "Parser/bk")
+               .Result.Content.ReadAsStringAsync().Result));
     }
 }
