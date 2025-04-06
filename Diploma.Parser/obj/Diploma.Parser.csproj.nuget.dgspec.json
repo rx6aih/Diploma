@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[8.0.12, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.29.0, )"
