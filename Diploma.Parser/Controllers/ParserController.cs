@@ -13,7 +13,7 @@ namespace Diploma.Parser.Controllers;
 public class ParserController(IOptions<ListCuponConfiguration> options) : ControllerBase
 {
     private readonly ListCuponConfiguration _cuponConfiguration = options.Value;
-    [HttpGet("kfc")]
+    [HttpGet("KfcCupon")]
     public async Task<IActionResult> KfcParse()
     {
         Parser<KfcCupon> parser = new Parser<KfcCupon>(new KfcParserStrategy(),
@@ -27,7 +27,7 @@ public class ParserController(IOptions<ListCuponConfiguration> options) : Contro
         return Ok(cupons);
     }
 
-    [HttpGet("bk")]
+    [HttpGet("BkCupon")]
     public async Task<IActionResult> BkParse()
     {
         Parser<BkCupon> parser = new Parser<BkCupon>(new BkParserStrategy(), 
@@ -41,7 +41,7 @@ public class ParserController(IOptions<ListCuponConfiguration> options) : Contro
         return Ok(JsonSerializer.Serialize(cupons));
     }
 
-    [HttpGet("mac")]
+    [HttpGet("MacCupon")]
     public async Task<IActionResult> MacParse()
     {
         Parser<MacCupon> parser = new Parser<MacCupon>(new MacParserStrategy(),

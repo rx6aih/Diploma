@@ -6,4 +6,5 @@ public abstract class Cupon
     public string Title { get; set; } = string.Empty;
     public string ImageUrl { get; set; }
 
+    public int Likes { get; set; }
 }
