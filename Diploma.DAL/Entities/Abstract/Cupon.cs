@@ -7,6 +7,6 @@ public abstract class Cupon
     public string ImageUrl { get; set; }
 
     public int Likes { get; set; }
-    
+    public int Dislikes { get; set; }
     public DateTime UpdateDay { get; set; } = DateTime.Now;
 }

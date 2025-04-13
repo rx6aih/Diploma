@@ -8,7 +8,7 @@ using Microsoft.Extensions.Caching.Distributed;
 
 namespace Diploma.API.Services;
 
-public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistributedCache cache) where TCupon : class
+public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistributedCache cache) where TCupon : Cupon
 {
     private IDistributedCache _cache = cache;
     
@@ -45,4 +45,14 @@ public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistribu
         
         return cupons;
     }
+
+    public async Task<bool> UpdateCuponAsync(TCupon newCupon, CancellationToken cancellationToken = default)
+    {
+        TCupon? cupon = await cuponRepository.GetItemByIdAsync(newCupon.Id, cancellationToken);
+        if(cupon == null)
+            return false;
+        await cuponRepository.UpdateAsync(cupon, newCupon.Id, cancellationToken);
+        return true;
+    }
+    
 }
