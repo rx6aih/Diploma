@@ -32,7 +32,7 @@ public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistribu
         
         HttpCommunicator communicator = new HttpCommunicator();
         List<TCupon>? cuponsFromParser = JsonSerializer.Deserialize<List<TCupon>>(communicator
-            .Send("http://localhost:5042", $"Parser/{typeof(TCupon).Name}")
+            .Send("http://localhost:5042", $"Parser/{typeof(TCupon).Name}", HttpMethod.Get)
             .Result.Content.ReadAsStringAsync().Result);
 
         if (cuponsFromParser == null)
