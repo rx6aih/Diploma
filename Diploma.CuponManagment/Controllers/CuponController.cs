@@ -2,7 +2,9 @@ using System.Text.Json;
 using Diploma.API.DataTransferObjects;
 using Diploma.API.Services;
 using Diploma.DAL.Context;
+using Diploma.DAL.Entities.Abstract;
 using Diploma.DAL.Entities.Implementations;
+using Diploma.DAL.Enums;
 using Diploma.DAL.Implementations;
 using Diploma.DAL.Interfaces;
 using Diploma.Utility.ServiceCommunication;
@@ -36,5 +38,19 @@ public class CuponController(CuponManagerContext context, IDistributedCache cach
     {
         CuponService <MacCupon> service = new CuponService<MacCupon>(new Repository<MacCupon>(context), cache);
         return Ok(await service.GetCupons());
+    }
+
+    [HttpPut]
+    [Route("UpdateCupon")]
+    public async Task<IActionResult> UpdateCupon(Cupon cupon, CuponType cuponType)
+    {
+        switch (cuponType)
+        {
+            case CuponType.Kfc:
+            {
+                CuponService<KfcCupon> service = new CuponService<KfcCupon>(new Repository<KfcCupon>(context), cache);
+                return Ok(await service.UpdateCuponAsync(cupon, CancellationToken.None));
+            }
+        }
     }
 }
