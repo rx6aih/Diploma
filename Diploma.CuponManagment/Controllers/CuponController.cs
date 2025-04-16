@@ -49,7 +49,21 @@ public class CuponController(CuponManagerContext context, IDistributedCache cach
             case CuponType.Kfc:
             {
                 CuponService<KfcCupon> service = new CuponService<KfcCupon>(new Repository<KfcCupon>(context), cache);
-                return Ok(await service.UpdateCuponAsync(cupon, CancellationToken.None));
+                return Ok(await service.UpdateCuponAsync((KfcCupon)cupon, CancellationToken.None));
+            }
+            case CuponType.Bk:
+            {
+                CuponService<BkCupon> service = new CuponService<BkCupon>(new Repository<BkCupon>(context), cache);
+                return Ok(await service.UpdateCuponAsync((BkCupon)cupon, CancellationToken.None));
+            }
+            case CuponType.Mac:
+            {
+                CuponService<MacCupon> service = new CuponService<MacCupon>(new Repository<MacCupon>(context), cache);
+                return Ok(await service.UpdateCuponAsync((MacCupon)cupon, CancellationToken.None));
+            }
+            default:
+            {
+                return BadRequest();
             }
         }
     }
