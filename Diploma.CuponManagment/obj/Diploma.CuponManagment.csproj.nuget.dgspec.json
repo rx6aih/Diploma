@@ -1,36 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj": {}
+    "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\Diploma.CuponManagment.csproj": {}
   },
   "projects": {
-    "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj": {
+    "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\Diploma.CuponManagment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj",
+        "projectUniqueName": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\Diploma.CuponManagment.csproj",
         "projectName": "Diploma.CuponManagment",
-        "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/Diploma.CuponManagment.csproj",
-        "packagesPath": "/home/shmi/.nuget/packages/",
-        "outputPath": "/home/shmi/RiderProjects/Diploma/Diploma.CuponManagment/obj/",
+        "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\Diploma.CuponManagment.csproj",
+        "packagesPath": "C:\\Users\\frolkin.yu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/shmi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\frolkin.yu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj": {
-                "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj"
+              "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\Diploma.DAL.csproj": {
+                "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\Diploma.DAL.csproj"
               },
-              "/home/shmi/RiderProjects/Diploma/Diploma.Utility/Diploma.Utility.csproj": {
-                "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.Utility/Diploma.Utility.csproj"
+              "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj": {
+                "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj"
               }
             }
           }
@@ -39,7 +45,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -81,6 +93,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -89,26 +119,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.114/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj": {
+    "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\Diploma.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\Diploma.DAL.csproj",
         "projectName": "Diploma.DAL",
-        "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/Diploma.DAL.csproj",
-        "packagesPath": "/home/shmi/.nuget/packages/",
-        "outputPath": "/home/shmi/RiderProjects/Diploma/Diploma.DAL/obj/",
+        "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\Diploma.DAL.csproj",
+        "packagesPath": "C:\\Users\\frolkin.yu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/shmi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\frolkin.yu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -121,7 +157,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -153,31 +195,51 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.114/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/shmi/RiderProjects/Diploma/Diploma.Utility/Diploma.Utility.csproj": {
+    "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shmi/RiderProjects/Diploma/Diploma.Utility/Diploma.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj",
         "projectName": "Diploma.Utility",
-        "projectPath": "/home/shmi/RiderProjects/Diploma/Diploma.Utility/Diploma.Utility.csproj",
-        "packagesPath": "/home/shmi/.nuget/packages/",
-        "outputPath": "/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/",
+        "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj",
+        "packagesPath": "C:\\Users\\frolkin.yu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/shmi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\frolkin.yu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -190,7 +252,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -212,12 +280,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.15, 8.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.114/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

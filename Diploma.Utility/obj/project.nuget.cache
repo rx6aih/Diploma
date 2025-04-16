@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "IKMijgleLOA=",
+  "dgSpecHash": "RQuQ27i8uUM=",
   "success": true,
-  "projectFilePath": "/home/shmi/RiderProjects/Diploma/Diploma.Utility/Diploma.Utility.csproj",
+  "projectFilePath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj",
   "expectedPackageFiles": [
-    "/home/shmi/.nuget/packages/confluent.kafka/2.8.0/confluent.kafka.2.8.0.nupkg.sha512",
-    "/home/shmi/.nuget/packages/librdkafka.redist/2.8.0/librdkafka.redist.2.8.0.nupkg.sha512"
+    "C:\\Users\\frolkin.yu\\.nuget\\packages\\confluent.kafka\\2.8.0\\confluent.kafka.2.8.0.nupkg.sha512",
+    "C:\\Users\\frolkin.yu\\.nuget\\packages\\librdkafka.redist\\2.8.0\\librdkafka.redist.2.8.0.nupkg.sha512",
+    "C:\\Users\\frolkin.yu\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\frolkin.yu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\frolkin.yu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
   ],
   "logs": []
 }
