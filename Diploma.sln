@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Auth", "Diploma.Aut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Auth.DAL", "Diploma.Auth.DAL\Diploma.Auth.DAL.csproj", "{C3CDE5B9-BA71-4F48-8410-89429BFABF89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Analytic", "Diploma.Analytic\Diploma.Analytic.csproj", "{8626B6AC-9EB6-49D5-A6AC-5C6247442AAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Analytic.DAL", "Diploma.Analytic.DAL\Diploma.Analytic.DAL.csproj", "{465115D5-B37E-414E-9E01-A239203137B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +52,13 @@ Global
 		{C3CDE5B9-BA71-4F48-8410-89429BFABF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3CDE5B9-BA71-4F48-8410-89429BFABF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3CDE5B9-BA71-4F48-8410-89429BFABF89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8626B6AC-9EB6-49D5-A6AC-5C6247442AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8626B6AC-9EB6-49D5-A6AC-5C6247442AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8626B6AC-9EB6-49D5-A6AC-5C6247442AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8626B6AC-9EB6-49D5-A6AC-5C6247442AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{465115D5-B37E-414E-9E01-A239203137B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{465115D5-B37E-414E-9E01-A239203137B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{465115D5-B37E-414E-9E01-A239203137B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{465115D5-B37E-414E-9E01-A239203137B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
