@@ -1,0 +1,10 @@
+global using Diploma.Auth.DAL.Context;
+global using Diploma.Auth.DAL.Implementations;
+global using Diploma.Auth.DAL.Interfaces;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.EntityFrameworkCore;
+global using Diploma.Auth.DAL.Entities;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Diploma.Auth.DAL.EntityTypeConfigurations;
+global using Microsoft.Extensions.Options;

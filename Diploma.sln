@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Utility", "Diploma.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Notification", " Diploma.Notification\Diploma.Notification.csproj", "{38CABCAA-A38D-4DE1-8C7A-0550E5C15947}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Auth", "Diploma.Auth\Diploma.Auth.csproj", "{3A777051-E7B7-4C12-846A-FD4DC479B1C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diploma.Auth.DAL", "Diploma.Auth.DAL\Diploma.Auth.DAL.csproj", "{C3CDE5B9-BA71-4F48-8410-89429BFABF89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{38CABCAA-A38D-4DE1-8C7A-0550E5C15947}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38CABCAA-A38D-4DE1-8C7A-0550E5C15947}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38CABCAA-A38D-4DE1-8C7A-0550E5C15947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A777051-E7B7-4C12-846A-FD4DC479B1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A777051-E7B7-4C12-846A-FD4DC479B1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A777051-E7B7-4C12-846A-FD4DC479B1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A777051-E7B7-4C12-846A-FD4DC479B1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3CDE5B9-BA71-4F48-8410-89429BFABF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3CDE5B9-BA71-4F48-8410-89429BFABF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3CDE5B9-BA71-4F48-8410-89429BFABF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3CDE5B9-BA71-4F48-8410-89429BFABF89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
