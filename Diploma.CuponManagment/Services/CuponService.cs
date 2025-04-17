@@ -1,3 +1,4 @@
+using System.Net;
 using System.Text.Json;
 using Diploma.DAL.Entities.Abstract;
 using Diploma.DAL.Entities.Implementations;
@@ -54,5 +55,29 @@ public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistribu
         await cuponRepository.UpdateAsync(cupon, newCupon.Id, cancellationToken);
         return true;
     }
-    
+
+    public async Task<bool> DeleteCuponAsync(int id, CancellationToken cancellationToken = default)
+    {
+        TCupon? cupon = await cuponRepository.GetItemByIdAsync(id, cancellationToken);
+        if(cupon == null)
+            return false;
+        await cuponRepository.DeleteAsync(cupon, cancellationToken);
+        return true;
+    }
+
+    public async Task<bool> LikeCuponAsync(TCupon likeCupon, CancellationToken cancellationToken = default)
+    {
+        TCupon? cupon = await cuponRepository.GetItemByIdAsync(likeCupon.Id, cancellationToken);
+        if(cupon == null)
+            return false;
+        
+        HttpCommunicator communicator = new HttpCommunicator();
+        var resultStatusCode = communicator
+            .Send("http://localhost:5279", $"Analytic/Like", HttpMethod.Put, new StringContent(JsonSerializer.Serialize(cupon)))
+            .Result.StatusCode;
+
+        if (resultStatusCode == HttpStatusCode.OK)
+            return true;
+        return false;
+    }
 }

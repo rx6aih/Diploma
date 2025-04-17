@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "LB1tX8SSqig+UsOpkgQrDt22Kb04bRYI1y09nWRrXvM=",
+  "Hash": "DnxXGPONbtHh+d3UVxph0Pn5CeZ4FO29vwb3+Kf39BM=",
   "Source": "Diploma.CuponManagment",
   "BasePath": "_content/Diploma.CuponManagment",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

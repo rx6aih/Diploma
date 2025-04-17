@@ -10,4 +10,17 @@ public class HttpCommunicator
         client.Dispose();
         return result;
     }
+
+    public async Task<HttpResponseMessage> Send(string url, string route, HttpMethod method, HttpContent content)
+    {
+        HttpClient client = new HttpClient();
+        client.BaseAddress = new Uri(url);
+        HttpRequestMessage request = new HttpRequestMessage(method, route);
+        request.Content = content;
+        
+        HttpResponseMessage result = await client.SendAsync(request);
+        client.Dispose();
+        return result;
+    }
+
 }

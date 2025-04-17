@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Diploma.Auth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58e21a9d62659f73955e9f03136797a28f12eae4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69c30bce562e230eb72c9cb799f14c8c6aeb57d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Diploma.Auth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Diploma.Auth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
