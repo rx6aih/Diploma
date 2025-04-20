@@ -38,24 +38,52 @@ public class CuponController(CuponManagerContext context, IDistributedCache cach
 
     [HttpPut]
     [Route("UpdateCupon")]
-    public async Task<IActionResult> UpdateCupon(Cupon cupon, CuponType cuponType)
+    public async Task<IActionResult> UpdateCupon([FromBody]Cupon cupon,[FromQuery]CuponType cuponType, CancellationToken cancellationToken = default)
     {
         switch (cuponType)
         {
             case CuponType.Kfc:
             {
                 CuponService<KfcCupon> service = new CuponService<KfcCupon>(new Repository<KfcCupon>(context), cache);
-                return Ok(await service.UpdateCuponAsync((KfcCupon)cupon, CancellationToken.None));
+                return Ok(await service.UpdateCuponAsync((KfcCupon)cupon, cancellationToken));
             }
             case CuponType.Bk:
             {
                 CuponService<BkCupon> service = new CuponService<BkCupon>(new Repository<BkCupon>(context), cache);
-                return Ok(await service.UpdateCuponAsync((BkCupon)cupon, CancellationToken.None));
+                return Ok(await service.UpdateCuponAsync((BkCupon)cupon, cancellationToken));
             }
             case CuponType.Mac:
             {
                 CuponService<MacCupon> service = new CuponService<MacCupon>(new Repository<MacCupon>(context), cache);
-                return Ok(await service.UpdateCuponAsync((MacCupon)cupon, CancellationToken.None));
+                return Ok(await service.UpdateCuponAsync((MacCupon)cupon, cancellationToken));
+            }
+            default:
+            {
+                return BadRequest();
+            }
+        }
+    }
+    
+    [HttpDelete]
+    [Route("DeleteCupon")]
+    public async Task<IActionResult> DeleteCuponAsync([FromQuery]int cuponId, [FromQuery]CuponType type, CancellationToken cancellationToken = default)
+    {
+        switch (type)
+        {
+            case CuponType.Kfc:
+            {
+                CuponService<KfcCupon> service = new CuponService<KfcCupon>(new Repository<KfcCupon>(context), cache);
+                return Ok(await service.DeleteCuponAsync(cuponId, cancellationToken));
+            }
+            case CuponType.Bk:
+            {
+                CuponService<BkCupon> service = new CuponService<BkCupon>(new Repository<BkCupon>(context), cache);
+                return Ok(await service.DeleteCuponAsync(cuponId, cancellationToken));
+            }
+            case CuponType.Mac:
+            {
+                CuponService<MacCupon> service = new CuponService<MacCupon>(new Repository<MacCupon>(context), cache);
+                return Ok(await service.DeleteCuponAsync(cuponId, cancellationToken));
             }
             default:
             {
