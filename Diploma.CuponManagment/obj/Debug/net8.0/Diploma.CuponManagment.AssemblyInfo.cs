@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Diploma.CuponManagment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+848eba20a218f7190d486d75e970a7181afe6333")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a80898448e12965aa2fd037d5b6fd22cc026ce49")]
 [assembly: System.Reflection.AssemblyProductAttribute("Diploma.CuponManagment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Diploma.CuponManagment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

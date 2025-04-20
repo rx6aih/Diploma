@@ -9,11 +9,12 @@
     <ItemGroup>
         <PackageReference Include="Confluent.Kafka" Version="2.8.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.12"/>
+        <PackageReference Include="Selenium.WebDriver" Version="4.31.0" />
+        <PackageReference Include="SeleniumExtras.WaitHelpers" Version="1.0.2" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Diploma.CuponManagment\Diploma.CuponManagment.csproj" />
       <ProjectReference Include="..\Diploma.DAL\Diploma.DAL.csproj" />
     </ItemGroup>
 

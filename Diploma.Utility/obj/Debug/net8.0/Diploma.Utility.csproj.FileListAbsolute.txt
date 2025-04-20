@@ -1,0 +1,13 @@
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/bin/Debug/net8.0/Diploma.Utility.deps.json
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/bin/Debug/net8.0/Diploma.Utility.dll
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/bin/Debug/net8.0/Diploma.Utility.pdb
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/Debug/net8.0/Diploma.Utility.csproj.AssemblyReference.cache
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/Debug/net8.0/Diploma.Utility.GeneratedMSBuildEditorConfig.editorconfig
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/Debug/net8.0/Diploma.Utility.AssemblyInfoInputs.cache
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/Debug/net8.0/Diploma.Utility.AssemblyInfo.cs
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/Debug/net8.0/Diploma.Utility.csproj.CoreCompileInputs.cache
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/Debug/net8.0/Diploma.Utility.sourcelink.json
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/Debug/net8.0/Diploma.Utility.dll
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/Debug/net8.0/refint/Diploma.Utility.dll
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/Debug/net8.0/Diploma.Utility.pdb
+/home/shmi/RiderProjects/Diploma/Diploma.Utility/obj/Debug/net8.0/ref/Diploma.Utility.dll

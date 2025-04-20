@@ -9,9 +9,10 @@
       "Diploma.Parser/1.0.0": {
         "dependencies": {
           "Confluent.Kafka": "2.8.0",
-          "Diploma.CuponManagment": "1.0.0",
           "Diploma.DAL": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.12",
+          "Selenium.WebDriver": "4.31.0",
+          "SeleniumExtras.WaitHelpers": "1.0.2",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
@@ -26,17 +27,6 @@
           "lib/net8.0/Confluent.Kafka.dll": {
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.0.0"
-          }
-        }
-      },
-      "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
-        "dependencies": {
-          "Selenium.WebDriver": "4.29.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {
-            "assemblyVersion": "3.11.0.0",
-            "fileVersion": "3.11.0.0"
           }
         }
       },
@@ -346,11 +336,22 @@
           }
         }
       },
-      "Selenium.WebDriver/4.29.0": {
+      "Selenium.WebDriver/4.31.0": {
         "runtime": {
           "lib/net8.0/WebDriver.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "SeleniumExtras.WaitHelpers/1.0.2": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.31.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
           }
         }
       },
@@ -400,19 +401,6 @@
           }
         }
       },
-      "Diploma.CuponManagment/1.0.0": {
-        "dependencies": {
-          "Confluent.Kafka": "2.8.0",
-          "Diploma.DAL": "1.0.0",
-          "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
-          "Microsoft.AspNetCore.OpenApi": "8.0.12",
-          "Selenium.WebDriver": "4.29.0",
-          "Swashbuckle.AspNetCore": "6.6.2"
-        },
-        "runtime": {
-          "Diploma.CuponManagment.dll": {}
-        }
-      },
       "Diploma.DAL/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.3",
@@ -436,13 +424,6 @@
       "sha512": "sha512-i5Qb5BPthGXmLRSZWXVLPVNfo9Mxt+UieC+E/ZTFmlGIuPPd57g7Sxp8QP7fYp7qEBXs561jvWDLGaCZqV9ycg==",
       "path": "confluent.kafka/2.8.0",
       "hashPath": "confluent.kafka.2.8.0.nupkg.sha512"
-    },
-    "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-xc6jVVl5ymgk3ZNWnC/KHxkEup1QpnwYbrwF+NQoCOGERsD8YMlLwmsX4lGhLXCLo/YQTRTIwlKCN9E/doGUNg==",
-      "path": "dotnetseleniumextras.waithelpers/3.11.0",
-      "hashPath": "dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512"
     },
     "librdkafka.redist/2.8.0": {
       "type": "package",
@@ -577,12 +558,19 @@
       "path": "npgsql.entityframeworkcore.postgresql/9.0.4",
       "hashPath": "npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512"
     },
-    "Selenium.WebDriver/4.29.0": {
+    "Selenium.WebDriver/4.31.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bxUeeyGPoPFqqZX/RQAmcuE8fvdi08ep9519rFpONfC/rmBemezfCbbwDKPLE0xkb/cW1asH5WbDYLXs5giVeg==",
-      "path": "selenium.webdriver/4.29.0",
-      "hashPath": "selenium.webdriver.4.29.0.nupkg.sha512"
+      "sha512": "sha512-RT5Pg6UVyxe/+S/H808VAbfXX4kHQdvo/U28oViwUcCpC4WL7zHq2GgxY/b9zNLTcwJ8zfqu+WmHPifkTx+BCQ==",
+      "path": "selenium.webdriver/4.31.0",
+      "hashPath": "selenium.webdriver.4.31.0.nupkg.sha512"
+    },
+    "SeleniumExtras.WaitHelpers/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-de7m30nkZZLkfCncYBdluUpM27AR/Vkk4kiA4HRQbV+fZI3ps4qGIeJCuj8TAMXdMfQik5Rno8xPnFBIod+ebg==",
+      "path": "seleniumextras.waithelpers/1.0.2",
+      "hashPath": "seleniumextras.waithelpers.1.0.2.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.6.2": {
       "type": "package",
@@ -618,11 +606,6 @@
       "sha512": "sha512-cBA+28xDW33tSiGht/H8xvr8lnaCrgJ7EdO348AfSGsX4PPJUOULKxny/cc9DVNGExaCrtqagsnm5M2mkWIZ+g==",
       "path": "system.diagnostics.diagnosticsource/9.0.3",
       "hashPath": "system.diagnostics.diagnosticsource.9.0.3.nupkg.sha512"
-    },
-    "Diploma.CuponManagment/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Diploma.DAL/1.0.0": {
       "type": "project",

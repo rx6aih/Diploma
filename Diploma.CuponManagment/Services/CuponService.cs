@@ -9,12 +9,12 @@ using Microsoft.Extensions.Caching.Distributed;
 namespace Diploma.API.Services;
 
 public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistributedCache cache) where TCupon : Cupon
-{
+{                               
     private IDistributedCache _cache = cache;
-    
-    public async Task<List<TCupon>> GetCuponsFromCache()
+                                        
+    public async Task<List<TCupon>> GetCuponsFromCache()                                                                                                
     {
-        string todayCacheKey = typeof(TCupon).Name + DateTime.Now.Day;
+        string todayCacheKey = typeof(TCupon).Name + DateTime.UtcNow.Day;                                                                                                                                                                                           
         return await _cache.GetRecordAsync<List<TCupon>>(todayCacheKey) ?? new List<TCupon>();
     }
 
@@ -41,9 +41,9 @@ public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistribu
         foreach(var cupon in cuponsFromParser)
             await cuponRepository.CreateAsync(cupon);
         
-        await SetCuponsToCache(cupons);
+        await SetCuponsToCache(cuponsFromParser);
         
-        return cupons;
+        return cuponsFromParser;
     }
 
     public async Task<bool> UpdateCuponAsync(TCupon newCupon, CancellationToken cancellationToken = default)

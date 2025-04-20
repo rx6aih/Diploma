@@ -8,5 +8,5 @@ public abstract class Cupon
 
     public int Likes { get; set; }
     public int Dislikes { get; set; }
-    public DateTime UpdateDay { get; set; } = DateTime.Now;
+    public DateTime UpdateDay { get; set; } = DateTime.UtcNow;
 }

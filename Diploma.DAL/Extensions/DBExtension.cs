@@ -13,7 +13,7 @@ public static class DBExtension
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
         services.AddDbContext<CuponManagerContext>(x =>
-            x.UseNpgsql("Server=postgres;Port=5432;Database=CuponManager;User Id=postgres;Password=postgres"
+            x.UseNpgsql("Server=localhost;Port=5438;Database=Auth;User Id=postgres;Password=postgres"
             ));
         return services;
     }
