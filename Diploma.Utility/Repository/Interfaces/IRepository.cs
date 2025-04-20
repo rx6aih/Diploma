@@ -1,4 +1,4 @@
-namespace Diploma.DAL.Interfaces;
+namespace Diploma.Utility.Repository.Interfaces;
 
 public interface IRepository<T> where T : class
 {

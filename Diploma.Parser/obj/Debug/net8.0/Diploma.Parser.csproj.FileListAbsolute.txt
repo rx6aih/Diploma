@@ -79,3 +79,5 @@
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/runtimes/win-x86/native/vcruntime140.dll
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/runtimes/win-x86/native/zlib1.dll
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/runtimes/win-x86/native/zstd.dll
+/home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Diploma.Utility.dll
+/home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Diploma.Utility.pdb

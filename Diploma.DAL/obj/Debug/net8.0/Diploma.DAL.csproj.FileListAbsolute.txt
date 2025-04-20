@@ -13,3 +13,6 @@
 /home/shmi/RiderProjects/Diploma/Diploma.DAL/bin/Debug/net8.0/Diploma.DAL.runtimeconfig.json
 /home/shmi/RiderProjects/Diploma/Diploma.DAL/obj/Debug/net8.0/Diploma.DAL.csproj.AssemblyReference.cache
 /home/shmi/RiderProjects/Diploma/Diploma.DAL/obj/Debug/net8.0/Diploma.DAL.genruntimeconfig.cache
+/home/shmi/RiderProjects/Diploma/Diploma.DAL/bin/Debug/net8.0/Diploma.Utility.dll
+/home/shmi/RiderProjects/Diploma/Diploma.DAL/bin/Debug/net8.0/Diploma.Utility.pdb
+/home/shmi/RiderProjects/Diploma/Diploma.DAL/obj/Debug/net8.0/Diploma.DAL.csproj.CopyComplete

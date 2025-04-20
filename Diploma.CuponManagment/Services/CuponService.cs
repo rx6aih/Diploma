@@ -1,8 +1,7 @@
 using System.Text.Json;
 using Diploma.DAL.Entities.Abstract;
-using Diploma.DAL.Entities.Implementations;
 using Diploma.DAL.Extensions;
-using Diploma.DAL.Interfaces;
+using Diploma.Utility.Repository.Interfaces;
 using Diploma.Utility.ServiceCommunication;
 using Microsoft.Extensions.Caching.Distributed;
 
