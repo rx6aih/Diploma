@@ -6,7 +6,8 @@ namespace Diploma.Analytic.DAL.Context;
 
 public class AnalyticContext (DbContextOptions<AnalyticContext> options) : DbContext(options)
 {
-    DbSet<ReactionOnCupon> ReactionOnCupons { get; set; }
+    public DbSet<ReactionOnCupon> ReactionOnCupons { get; set; }
+    public DbSet<CuponDetails> CuponDetails { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

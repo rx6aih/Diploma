@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Diploma.Utility")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+571d0ca42baf7033d8533e3c2d88c44237dfee68")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+460aee2fa19d4b8b81238d5a5ffd2ae29b80648f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Diploma.Utility")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Diploma.Utility")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

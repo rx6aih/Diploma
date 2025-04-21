@@ -1,3 +1,6 @@
+using Diploma.Analytic.DAL.Context;
+using Diploma.Utility.Repository.Implementations;
+using Diploma.Utility.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,7 +12,7 @@ public static class Extension
     {
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
-        services.AddDbContext<AuthContext>(x =>
+        services.AddDbContext<AnalyticContext>(x =>
             x.UseNpgsql("Server=postgres;Port=5432;Database=Auth;User Id=postgres;Password=postgres"
             ));
         return services;
