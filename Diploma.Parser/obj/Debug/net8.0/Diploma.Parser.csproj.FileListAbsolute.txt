@@ -39,9 +39,6 @@
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/obj/Debug/net8.0/Diploma.Parser.genruntimeconfig.cache
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/obj/Debug/net8.0/ref/Diploma.Parser.dll
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/obj/Debug/net8.0/Diploma.Parser.sourcelink.json
-/home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Diploma.CuponManagment.deps.json
-/home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Diploma.CuponManagment.runtimeconfig.json
-/home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Diploma.CuponManagment
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Confluent.Kafka.dll
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -82,5 +79,5 @@
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/runtimes/win-x86/native/vcruntime140.dll
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/runtimes/win-x86/native/zlib1.dll
 /home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/runtimes/win-x86/native/zstd.dll
-/home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Diploma.CuponManagment.dll
-/home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Diploma.CuponManagment.pdb
+/home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Diploma.Utility.dll
+/home/shmi/RiderProjects/Diploma/Diploma.Parser/bin/Debug/net8.0/Diploma.Utility.pdb

@@ -4,125 +4,6 @@
     "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Parser\\Diploma.Parser.csproj": {}
   },
   "projects": {
-    "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\Diploma.CuponManagment.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\Diploma.CuponManagment.csproj",
-        "projectName": "Diploma.CuponManagment",
-        "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\Diploma.CuponManagment.csproj",
-        "packagesPath": "C:\\Users\\frolkin.yu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\frolkin.yu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\Diploma.DAL.csproj": {
-                "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\Diploma.DAL.csproj"
-              },
-              "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj": {
-                "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Confluent.Kafka": {
-              "target": "Package",
-              "version": "[2.8.0, )"
-            },
-            "DotNetSeleniumExtras.WaitHelpers": {
-              "target": "Package",
-              "version": "[3.11.0, )"
-            },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.12, )"
-            },
-            "Microsoft.Extensions.Caching.StackExchangeRedis": {
-              "target": "Package",
-              "version": "[9.0.2, )"
-            },
-            "Selenium.WebDriver": {
-              "target": "Package",
-              "version": "[4.29.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.6.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\Diploma.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -150,7 +31,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj": {
+                "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -171,7 +56,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -246,9 +131,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\Diploma.CuponManagment.csproj": {
-                "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.CuponManagment\\Diploma.CuponManagment.csproj"
-              },
               "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\Diploma.DAL.csproj": {
                 "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.DAL\\Diploma.DAL.csproj"
               }
@@ -278,6 +160,14 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.12, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.31.0, )"
+            },
+            "SeleniumExtras.WaitHelpers": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -374,6 +264,10 @@
             "Confluent.Kafka": {
               "target": "Package",
               "version": "[2.8.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

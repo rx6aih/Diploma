@@ -1,13 +1,9 @@
-using System.Text.Json;
-using Diploma.API.DataTransferObjects;
 using Diploma.API.Services;
 using Diploma.DAL.Context;
 using Diploma.DAL.Entities.Abstract;
 using Diploma.DAL.Entities.Implementations;
 using Diploma.DAL.Enums;
-using Diploma.DAL.Implementations;
-using Diploma.DAL.Interfaces;
-using Diploma.Utility.ServiceCommunication;
+using Diploma.Utility.Repository.Implementations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 

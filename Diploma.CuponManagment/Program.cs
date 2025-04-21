@@ -1,4 +1,5 @@
 using Diploma.API.Services;
+using Diploma.DAL.Context;
 using Diploma.DAL.Extensions;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -16,7 +17,10 @@ builder.Services.AddStackExchangeRedisCache(options =>
 builder.Services.AddHostedService<ConsumerService>();
 builder.Services.AddDal();
 var app = builder.Build();
-
+using var scope = app.Services.CreateScope();
+await using var dbContext = scope.ServiceProvider.GetRequiredService<CuponManagerContext>();
+dbContext.Database.EnsureDeleted();
+dbContext.Database.EnsureCreated();
 app.UseSwagger();
 app.UseSwaggerUI();
 app.MapControllers();

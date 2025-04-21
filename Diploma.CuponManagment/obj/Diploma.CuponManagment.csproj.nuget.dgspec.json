@@ -150,7 +150,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj": {
+                "projectPath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Utility\\Diploma.Utility.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -171,7 +175,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -267,6 +271,10 @@
             "Confluent.Kafka": {
               "target": "Package",
               "version": "[2.8.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [

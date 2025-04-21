@@ -1,11 +1,9 @@
-using Diploma.DAL.Context;
-using Diploma.DAL.Interfaces;
+using Diploma.Utility.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Diploma.DAL.Implementations;
+namespace Diploma.Utility.Repository.Implementations;
 
-
-public class Repository<T>(CuponManagerContext context) : IRepository<T>
+public class Repository<T>(DbContext context) : IRepository<T>
     where T : class
 {
     private readonly DbSet<T> _dbSet = context.Set<T>();

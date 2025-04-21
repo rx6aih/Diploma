@@ -1,0 +1,12 @@
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/bin/Debug/net8.0/Diploma.Analytic.DAL.deps.json
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/bin/Debug/net8.0/Diploma.Analytic.DAL.dll
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/bin/Debug/net8.0/Diploma.Analytic.DAL.pdb
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/obj/Debug/net8.0/Diploma.Analytic.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/obj/Debug/net8.0/Diploma.Analytic.DAL.AssemblyInfoInputs.cache
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/obj/Debug/net8.0/Diploma.Analytic.DAL.AssemblyInfo.cs
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/obj/Debug/net8.0/Diploma.Analytic.DAL.csproj.CoreCompileInputs.cache
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/obj/Debug/net8.0/Diploma.Analytic.DAL.sourcelink.json
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/obj/Debug/net8.0/Diploma.Analytic.DAL.dll
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/obj/Debug/net8.0/refint/Diploma.Analytic.DAL.dll
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/obj/Debug/net8.0/Diploma.Analytic.DAL.pdb
+/home/shmi/RiderProjects/Diploma/Diploma.Analytic.DAL/obj/Debug/net8.0/ref/Diploma.Analytic.DAL.dll

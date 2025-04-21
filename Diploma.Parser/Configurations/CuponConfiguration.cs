@@ -1,5 +1,3 @@
-using OpenQA.Selenium.Chrome;
-
 namespace Diploma.Parser.Configurations;
 
 public class CuponConfiguration
