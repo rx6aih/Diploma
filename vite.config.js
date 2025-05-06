@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import postcssPresetEnv  from 'postcss-preset-env';
 
 export default defineConfig({
     content: [
@@ -11,6 +12,9 @@ export default defineConfig({
     darkMode: "class",
   plugins: [
       react(),
-
+      postcssPresetEnv({
+          /* pluginOptions */
+          features: {},
+      })
   ],
 })
