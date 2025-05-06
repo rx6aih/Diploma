@@ -7,72 +7,71 @@ import {
     Button,
     Avatar,
     Dropdown,
-    DropdownTrigger, DropdownMenu, DropdownItem
+    DropdownTrigger, DropdownMenu, DropdownItem, ButtonGroup
 } from "@heroui/react";
 
+import burger from "../../../Images/Navbar/burger.svg"
+import kfc from "../../../Images/Navbar/KFC_logo.svg.png"
+import mac from "../../../Images/Navbar/Mac_logo.png"
+import logo from "../../../Images/Navbar/img.png"
+import bk from "../../../Images/Navbar/Burger_King_2020.svg.png"
+
 import React from 'react';
-export const AcmeLogo = () => {
-    return (
-        <svg fill="none" height="36" viewBox="0 0 32 32" width="36">
-            <path
-                clipRule="evenodd"
-                d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-                fill="currentColor"
-                fillRule="evenodd"
-            />
-        </svg>
-    );
-};
+
 const MyNavbar = () => {
     return (
-        <Navbar>
+        <Navbar shouldHideOnScroll>
             <NavbarBrand>
-                <AcmeLogo/>
-                <p className="font-bold text-inherit">ACME</p>
+                <Dropdown placement="bottom" className={"w-fit"}>
+                    <DropdownTrigger>
+                        <Button className={"bg-transparent pt-6 pb-8 mt-2"} radius={"full"}>
+                            <img src={logo} className={"w-18 h-18 mb-1"}/>
+                        </Button>
+                    </DropdownTrigger>
+                    <DropdownMenu aria-label="Profile Actions" variant="flat">
+                        <DropdownItem key="profile">
+                            <div className={"flex flex-row gap-10"}>
+                                <img src={kfc} className={"w-10 h-10 mr-1"}/>
+                                <Button className="bg-gradient-to-br from-red-700 to-red-400 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]" radius={"full"}>KFC</Button>
+                            </div>
+                        </DropdownItem>
+                        <DropdownItem key="settings">
+                            <div className={"flex flex-row gap-10"}>
+                                <img src={mac} className={"w-10 h-8 mt-1 mr-1"}/>
+                                <Button className={"bg-gradient-to-bl from-yellow-400 to-orange-600 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]"} radius={"full"}>MAC</Button>
+                            </div>
+                        </DropdownItem>
+                        <DropdownItem key="team_settings">
+                            <div className={"flex flex-row gap-10"}>
+                                <img src={bk} className={"w-10 h-8 mt-1 mr-1"}/>
+                                <Button className={"bg-gradient-to-tl from-amber-700 to-orange-600 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]"} radius={"full"}>BK</Button>
+                            </div>
+                        </DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
             </NavbarBrand>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem>
-                    <Link href="#">
-                        Features
-                    </Link>
+                    <Button className="bg-transparent">Analytic</Button>
+                    <Button className="bg-transparent">History</Button>
                 </NavbarItem>
-                <NavbarItem isActive>
-                    <Link aria-current="page" color="secondary" href="#">
-                        Customers
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link color="foreground" href="#">
-                        Integrations
-                    </Link>
-                </NavbarItem>
-            </NavbarContent>
 
-            <NavbarContent as="div" justify="end">
                 <Dropdown placement="bottom-end">
                     <DropdownTrigger>
                         <Avatar
                             isBordered
                             as="button"
-                            className="transition-transform"
-                            color="secondary"
+                            className="transition-transform p-5"
+                            color="default"
                             name="Jason Hughes"
                             size="sm"
                             src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
                         />
                     </DropdownTrigger>
                     <DropdownMenu aria-label="Profile Actions" variant="flat">
-                        <DropdownItem key="profile" className="h-14 gap-2">
-                            <p className="font-semibold">Signed in as</p>
-                            <p className="font-semibold">zoey@example.com</p>
-                        </DropdownItem>
-                        <DropdownItem key="settings">My Settings</DropdownItem>
-                        <DropdownItem key="team_settings">Team Settings</DropdownItem>
-                        <DropdownItem key="analytics">Analytics</DropdownItem>
-                        <DropdownItem key="system">System</DropdownItem>
-                        <DropdownItem key="configurations">Configurations</DropdownItem>
-                        <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
+                        <DropdownItem key="settings">My Favorites</DropdownItem>
+                        <DropdownItem key="configurations">My Profile</DropdownItem>
                         <DropdownItem key="logout" color="danger">
                             Log Out
                         </DropdownItem>
