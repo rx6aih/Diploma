@@ -4,7 +4,5 @@ import App from './App.jsx'
 import {HeroUIProvider} from "@heroui/system";
 
 createRoot(document.getElementById('root')).render(
-    <HeroUIProvider>
         <App />
-    </HeroUIProvider>
 )
