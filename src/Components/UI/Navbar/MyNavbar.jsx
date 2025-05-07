@@ -10,7 +10,6 @@ import {
     DropdownTrigger, DropdownMenu, DropdownItem, ButtonGroup, NavbarMenuToggle, NavbarMenu, NavbarMenuItem
 } from "@heroui/react";
 
-import burger from "../../../Images/Navbar/burger.svg"
 import kfc from "../../../Images/Navbar/KFC_logo.svg.png"
 import mac from "../../../Images/Navbar/Mac_logo.png"
 import bk from "../../../Images/Navbar/Burger_King_2020.svg.png"
@@ -29,7 +28,7 @@ const MyNavbar = () => {
         "Log Out",
     ];
     return (
-        <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
+        <Navbar onMenuOpenChange={setIsMenuOpen}>
             <NavbarBrand>
                 <Dropdown placement="bottom" className={"w-fit"}>
                     <DropdownTrigger>
@@ -63,8 +62,8 @@ const MyNavbar = () => {
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem>
-                    <Button className="bg-transparent">Analytic</Button>
-                    <Button className="bg-transparent">History</Button>
+                    <Button className="bg-transparent">Аналитика</Button>
+                    <Button className="bg-transparent">История</Button>
                 </NavbarItem>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -83,10 +82,10 @@ const MyNavbar = () => {
                         />
                     </DropdownTrigger>
                     <DropdownMenu aria-label="Profile Actions" variant="flat">
-                        <DropdownItem key="settings">My Favorites</DropdownItem>
-                        <DropdownItem key="configurations">My Profile</DropdownItem>
+                        <DropdownItem key="settings">Мой Профиль</DropdownItem>
+                        <DropdownItem key="configurations">Мои Избранные</DropdownItem>
                         <DropdownItem key="logout" color="danger">
-                            Log Out
+                            Выйти
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
