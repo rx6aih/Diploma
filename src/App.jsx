@@ -2,15 +2,17 @@ import * as React from "react";
 import {BrowserRouter} from "react-router-dom";
 import MyNavbar from "./Components/UI/Navbar/MyNavbar.jsx";
 import {HeroUIProvider} from "@heroui/system";
+import AppRouter from "./Route/AppRouter.jsx";
 function App() {
 
-  return (
-      <BrowserRouter>
-          <HeroUIProvider>
-              <MyNavbar/>
-          </HeroUIProvider>
-      </BrowserRouter>
-  )
+    return (
+        <BrowserRouter>
+            <HeroUIProvider>
+                    <MyNavbar/>
+                    <AppRouter/>
+            </HeroUIProvider>
+        </BrowserRouter>
+    );
 }
 
 export default App

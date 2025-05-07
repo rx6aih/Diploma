@@ -7,25 +7,35 @@ import {
     Button,
     Avatar,
     Dropdown,
-    DropdownTrigger, DropdownMenu, DropdownItem, ButtonGroup
+    DropdownTrigger, DropdownMenu, DropdownItem, ButtonGroup, NavbarMenuToggle, NavbarMenu, NavbarMenuItem
 } from "@heroui/react";
 
 import burger from "../../../Images/Navbar/burger.svg"
 import kfc from "../../../Images/Navbar/KFC_logo.svg.png"
 import mac from "../../../Images/Navbar/Mac_logo.png"
-import logo from "../../../Images/Navbar/img.png"
 import bk from "../../../Images/Navbar/Burger_King_2020.svg.png"
+
+import logo from "../../../Images/Navbar/FastFoodLogo2.webp"
+import menuWord from "../../../Images/Navbar/MenuWord1.webp"
 
 import React from 'react';
 
 const MyNavbar = () => {
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+    const menuItems = [
+        "My Favorites",
+        "My Profile",
+        "Log Out",
+    ];
     return (
-        <Navbar shouldHideOnScroll>
+        <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
             <NavbarBrand>
                 <Dropdown placement="bottom" className={"w-fit"}>
                     <DropdownTrigger>
-                        <Button className={"bg-transparent pt-6 pb-8 mt-2"} radius={"full"}>
-                            <img src={logo} className={"w-18 h-18 mb-1"}/>
+                        <Button className={"bg-transparent pt-8 pb-8 mt-2 mb-2"} radius={"full"}>
+                            <img src={logo} className={"w-20 h-24 mb-1"}/>
+                            <img src={menuWord} className={"w-20 h-24 mt-2"}/>
                         </Button>
                     </DropdownTrigger>
                     <DropdownMenu aria-label="Profile Actions" variant="flat">
@@ -56,7 +66,10 @@ const MyNavbar = () => {
                     <Button className="bg-transparent">Analytic</Button>
                     <Button className="bg-transparent">History</Button>
                 </NavbarItem>
-
+                <NavbarMenuToggle
+                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                    className="sm:hidden"
+                />
                 <Dropdown placement="bottom-end">
                     <DropdownTrigger>
                         <Avatar
@@ -78,6 +91,22 @@ const MyNavbar = () => {
                     </DropdownMenu>
                 </Dropdown>
             </NavbarContent>
+            <NavbarMenu>
+                {menuItems.map((item, index) => (
+                    <NavbarMenuItem key={`${item}-${index}`}>
+                        <Link
+                            className="w-full"
+                            color={
+                                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                            }
+                            href="#"
+                            size="lg"
+                        >
+                            {item}
+                        </Link>
+                    </NavbarMenuItem>
+                ))}
+            </NavbarMenu>
         </Navbar>
     );
 }
