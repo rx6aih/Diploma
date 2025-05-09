@@ -1,5 +1,4 @@
 import Profile from "../Pages/Profile.jsx";
-import About from "../Pages/About.jsx";
 import Analytic from "../Pages/Analytic.jsx";
 import History from "../Pages/History.jsx";
 import Home from "../Pages/Home.jsx";
@@ -12,7 +11,6 @@ export const privateRoutes = [
 ]
 
 export const publicRoutes = [
-    {path: '/about', component: About},
     {path: '/analytic', component: Analytic},
     {path: '/history', component: History},
     {path: '/home', component: Home},

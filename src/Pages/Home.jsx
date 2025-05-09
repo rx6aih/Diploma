@@ -11,6 +11,9 @@ import macdonalds from "../Images/Pages/Home/macdonalds.webp"
 import pizzaImag3 from "../Images/Pages/Home/pizzaImage3.jpg"
 import kfcRestaurant from "../Images/Pages/Home/kfcRestaurant.jpg"
 import macRestaurant from "../Images/Pages/Home/macdonaldsRestaurant.jpg"
+import gitFooter from "../Images/Pages/Home/gitFooter.svg"
+import telegramFooter from "../Images/Pages/Home/telegram.png"
+import vkFooter from "../Images/Pages/Home/vk.svg"
 import {Button, Card, Chip, Image} from "@heroui/react";
 import BlurCard from "../Components/UI/Card/BlurCard.jsx";
 
@@ -96,7 +99,7 @@ const Home = () => {
             <Image src={kfcImage} width={350} className={"rotate-[25deg] mr-[100em]"}/>
             <Image src={pizzaImage} width={300} className={"rotate-[20deg] mr-[10em]"}/>
             <div className={"flex flex-col justify-center text-center gap-10 mb-28 mr-[4em]"}>
-                <Chip className={"text-white font-extrabold text-[42px] p-24 pb-[3em] bg-gradient-to-r from-red-500 to-orange-500"}>Присоединяйся к нам!
+                <Chip className={"text-white font-extrabold text-[42px] p-24 pb-[3em] bg-gradient-to-r from-red-500 to-orange-500 shadow-[10px_10px_15px_0px_rgba(0,_0,_0,_0.2)]"}>Присоединяйся к нам!
                     <p className={"text-[27px] mt-4 mb-2"}>Стань частью сети партнёров</p>
                     <p className={"text-[24px] "}>Увеличивай выручку благодаря купонам</p></Chip>
 
@@ -109,18 +112,37 @@ const Home = () => {
             </div>
         </div>
             <div className={"flex justify-center mt-28"}>
-                <div className={"flex flex-row w-[85%] gap-16"}>
+                <div className={"flex flex-row w-[90%] mb-10 gap-16 border-solid border-2 border-[#e3e3e3] p-8 shadow-[0px_10px_15px_-3px_rgba(0,_0,_0,_0.1)] rounded-xl"}>
                     <div className={"w-[22em]"}>
-                        <p className={"text-black text-[27px] font-extrabold"}>Получи выгоду здесь и сейчас</p>
+                        <p className={"text-black text-[27px] font-extrabold"}>Получи<span className={"text-lime-600"}> выгоду</span> здесь и сейчас
+                        </p>
                         <p className={"text-black text-[16px] font-medium mt-8"}>Здесь собраны самые вкусныерестораны быстрого питания с купонами, доступными каждому.
                         Ежедневные обновления и самые горячие скидки ждут вас!</p>
-                        <Button className={"mt-4"}>Перейти к купонам</Button>
+                        <Button className={"mt-4 bg-gradient-to-r from-lime-300 to-lime-500"}>Перейти к купонам</Button>
                     </div>
                     <div className={"flex gap-10"}>
-                        <BlurCard img={kfcRestaurant} height={400} width={500} text={"KFC"} buttonText={"Перейти"}></BlurCard>
-                        <BlurCard img={macRestaurant} text={"MACDONALDS"} height={400} width={700} buttonText={"Перейти"}></BlurCard>
+                        <BlurCard img={kfcRestaurant} height={400} width={700} text={"KFC"} buttonText={"Перейти"}></BlurCard>
+                        <BlurCard img={macRestaurant} text={"MACDONALDS"} height={400} width={600} buttonText={"Перейти"}></BlurCard>
                     </div>
+                </div>
+            </div>
 
+            <div className={"flex justify-center mt-40 h-[10em] overflow-hidden"}>
+                <div className={"w-[85%] flex justify-center bg-gradient-to-tr from-red-500 to-orange-500 p-1 pb-2 rounded-3xl shadow-2xl"}>
+                    <div className={"bg-white w-full h-full rounded-3xl p-4 flex flex-row gap-8"}>
+                        <a href={"#"} className={"flex flex-col items-center"}>
+                            <img src={gitFooter} className={"w-[3.2em]"}></img>
+                            <p>github</p>
+                        </a>
+                        <a href={"#"} className={"flex flex-col items-center"}>
+                            <img src={telegramFooter} className={"w-[3.2em]"}></img>
+                            <p>telegram</p>
+                        </a>
+                        <a href={"#"} className={"flex flex-col items-center"}>
+                            <img src={vkFooter} className={"w-[3.2em]"}></img>
+                            <p>VKontakte</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
