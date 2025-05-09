@@ -6,7 +6,12 @@ import fries from "../Images/Pages/Home/fries.png"
 import sloganLogo from "../Images/Pages/Home/Hero-logo.webp"
 import kfcImage from "../Images/Pages/Home/kfcImage.jpg"
 import pizzaImage from "../Images/Pages/Home/pizzaImage.png"
-import {Button, Card, Image} from "@heroui/react";
+import pizzaImage2 from "../Images/Pages/Home/dominos1.jpg"
+import macdonalds from "../Images/Pages/Home/macdonalds.webp"
+import pizzaImag3 from "../Images/Pages/Home/pizzaImage3.jpg"
+import kfcRestaurant from "../Images/Pages/Home/kfcRestaurant.jpg"
+import macRestaurant from "../Images/Pages/Home/macdonaldsRestaurant.jpg"
+import {Button, Card, Chip, Image} from "@heroui/react";
 import BlurCard from "../Components/UI/Card/BlurCard.jsx";
 
 const Home = () => {
@@ -55,7 +60,7 @@ const Home = () => {
                             <p>👉Купоннн купонн</p>
                             <p>👉Купоннн купонн купон</p>
                         </div>
-                        <Button className={"mt-14 text-[16px] w-64 h-12 rounded-3xl bg-gradient-to-r from-amber-200 to-yellow-400"}>
+                        <Button className={"mt-14 text-[16px] w-72 h-12 rounded-3xl bg-gradient-to-r from-amber-200 to-yellow-400"}>
                             Лучшие купоны за всю историю
                         </Button>
                     </div>
@@ -67,14 +72,14 @@ const Home = () => {
                         <p className={"font-bold text-[36px]"}>Список наших партнёров</p>
                     </div>
                     <div className={"relative flex translate-y-24 -translate-x-[31em]"}>
-                        <p className={"absolute top-[3em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>#рестораны#пицца#бургеры#роллы#фастфуд#рестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры</p>
-                        <p className={"absolute top-[4.5em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>ллы#рестораны#рестораны#пицца#бургеры#роллы#фастфуд#рестораны#пицца#бургеры#пицца#бургеры#ро</p>
-                        <p className={"absolute top-[6em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>тораны#пицца#бургеры#роллы#фастфуд#рестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры#рол</p>
-                        <p className={"absolute top-[7.5em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>#роллы#фастфуд##рестораны#пицца#бургерырестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры</p>
-                        <p className={"absolute top-[9em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>бургеры#роллы#фастфуд#рестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры#рестораны#пицца#</p>
-                        <p className={"absolute top-[10.5em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>рестораны#пицца#бургеры#роллы#фастфуд#рестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры#</p>
-                        <p className={"absolute top-[12em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>#пицца#бургеры#роллы#фастфуд#рестораны#пицца#рестораны#роллы#рестораны#пицца#бургеры#рестора</p>
-                        <p className={"absolute top-[13.5em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>а#бургеры#роллы#фастфуд#рестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры#рестораны#пицц</p>
+                        <p className={"absolute top-[3em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>#рестораны#пицца#бургеры#роллы#фастфуд#рестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры#макдон</p>
+                        <p className={"absolute top-[4.5em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>ллы#рестораны#рестораны#пицца#бургеры#роллы#фастфуд#рестораны#пицца#бургеры#пицца#бургеры#роллы#кфс</p>
+                        <p className={"absolute top-[6em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>тораны#пицца#бургеры#роллы#фастфуд#рестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры#ролл#бурге</p>
+                        <p className={"absolute top-[7.5em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>#роллы#фастфуд##рестораны#пицца#бургерырестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры#кфс#ма</p>
+                        <p className={"absolute top-[9em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>бургеры#роллы#фастфуд#рестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры#рестораны#пицца#роллы#б</p>
+                        <p className={"absolute top-[10.5em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>рестораны#пицца#бургеры#роллы#фастфуд#рестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры##пицца#</p>
+                        <p className={"absolute top-[12em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>#пицца#бургеры#роллы#фастфуд#рестораны#пицца#рестораны#роллы#рестораны#пицца#бургеры#рестора#рестора</p>
+                        <p className={"absolute top-[13.5em] mt-auto mb-10 ml-12 text-[#efddc3] text-[30px] font-extrabold"}>а#бургеры#роллы#фастфуд#рестораны#пицца#бургеры#роллы#рестораны#пицца#бургеры#рестораны#пицца#рестор</p>
                     </div>
                 </div>
 
@@ -88,17 +93,36 @@ const Home = () => {
                 </div>
             </div>
         <div className={"flex flex-row mt-20"}>
-            <Image src={kfcImage} width={300} className={"rotate-[25deg]"}/>
-            <Image src={pizzaImage} width={300} className={"rotate-[20deg]"}/>
-            <div className={"flex flex-col justify-center text-center gap-10 mb-28 ml-auto mr-auto"}>
-                <p className={"font-extrabold text-[20px]"}>Присоединяйся к нашей компании!</p>
-                <p>asdasdads</p>
-                <p>asdasdads</p>
-            </div>
-            <Image src={pizzaImage} width={300} className={"rotate-[20deg]"}/>
-            <Image src={pizzaImage} width={300} className={"rotate-[20deg]"}/>
+            <Image src={kfcImage} width={350} className={"rotate-[25deg] mr-[100em]"}/>
+            <Image src={pizzaImage} width={300} className={"rotate-[20deg] mr-[10em]"}/>
+            <div className={"flex flex-col justify-center text-center gap-10 mb-28 mr-[4em]"}>
+                <Chip className={"text-white font-extrabold text-[42px] p-24 pb-[3em] bg-gradient-to-r from-red-500 to-orange-500"}>Присоединяйся к нам!
+                    <p className={"text-[27px] mt-4 mb-2"}>Стань частью сети партнёров</p>
+                    <p className={"text-[24px] "}>Увеличивай выручку благодаря купонам</p></Chip>
 
+            </div>
+            <Image src={pizzaImage2} width={200} className={"rotate-[-20deg] -translate-x-[2em]"}/>
+            <Image src={macdonalds} width={400} className={"rotate-[28deg] translate-x-4"}/>
+            <div className={"overflow-hidden"}>
+                <Image src={pizzaImag3} width={200} height={200} className={"rotate-[2deg]"}/>
+
+            </div>
         </div>
+            <div className={"flex justify-center mt-28"}>
+                <div className={"flex flex-row w-[85%] gap-16"}>
+                    <div className={"w-[22em]"}>
+                        <p className={"text-black text-[27px] font-extrabold"}>Получи выгоду здесь и сейчас</p>
+                        <p className={"text-black text-[16px] font-medium mt-8"}>Здесь собраны самые вкусныерестораны быстрого питания с купонами, доступными каждому.
+                        Ежедневные обновления и самые горячие скидки ждут вас!</p>
+                        <Button className={"mt-4"}>Перейти к купонам</Button>
+                    </div>
+                    <div className={"flex gap-10"}>
+                        <BlurCard img={kfcRestaurant} height={400} width={500} text={"KFC"} buttonText={"Перейти"}></BlurCard>
+                        <BlurCard img={macRestaurant} text={"MACDONALDS"} height={400} width={700} buttonText={"Перейти"}></BlurCard>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
     );
