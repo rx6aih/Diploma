@@ -41,7 +41,7 @@ const MyNavbar = () => {
                         <DropdownItem key="profile">
                             <div className={"flex flex-row gap-10"}>
                                 <img src={kfc} className={"w-10 h-10 mr-1"}/>
-                                <Button className="bg-gradient-to-br from-red-700 to-red-400 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]" radius={"full"}>KFC</Button>
+                                <Button className="bg-gradient-to-br from-red-700 to-red-400 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]" radius={"full"}><a href={"/kfc"}>KFC</a></Button>
                             </div>
                         </DropdownItem>
                         <DropdownItem key="settings">
