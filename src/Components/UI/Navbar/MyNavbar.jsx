@@ -70,7 +70,7 @@ const MyNavbar = () => {
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem>
-                    <Button className="bg-transparent">Аналитика</Button>
+                    <Button className="bg-transparent"><a href={"/analytic"}>Аналитика</a></Button>
                     <Button className="bg-transparent">История</Button>
                 </NavbarItem>
                 <NavbarMenuToggle
