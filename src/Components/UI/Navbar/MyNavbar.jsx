@@ -33,28 +33,36 @@ const MyNavbar = () => {
                 <Dropdown placement="bottom" className={"w-fit"}>
                     <DropdownTrigger>
                         <Button className={"bg-transparent pt-8 pb-8 mt-2 mb-2"} radius={"full"}>
-                            <img src={logo} className={"w-20 h-24 mb-1"}/>
+                            <a href={"/home"}>
+                                <img src={logo} className={"w-20 h-24 mb-1"}/>
+                            </a>
                             <img src={menuWord} className={"w-20 h-24 mt-2"}/>
                         </Button>
                     </DropdownTrigger>
                     <DropdownMenu aria-label="Profile Actions" variant="flat">
                         <DropdownItem key="profile">
-                            <div className={"flex flex-row gap-10"}>
-                                <img src={kfc} className={"w-10 h-10 mr-1"}/>
-                                <Button className="bg-gradient-to-br from-red-700 to-red-400 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]" radius={"full"}><a href={"/kfc"}>KFC</a></Button>
-                            </div>
+                            <a href={"/kfc"}>
+                                <div className={"flex flex-row gap-10"}>
+                                    <img src={kfc} className={"w-10 h-10 mr-1"}/>
+                                    <Button className="bg-gradient-to-br from-red-700 to-red-400 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]" radius={"full"}>KFC</Button>
+                                </div>
+                            </a>
                         </DropdownItem>
                         <DropdownItem key="settings">
-                            <div className={"flex flex-row gap-10"}>
-                                <img src={mac} className={"w-10 h-8 mt-1 mr-1"}/>
-                                <Button className={"bg-gradient-to-bl from-yellow-400 to-orange-600 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]"} radius={"full"}>MAC</Button>
-                            </div>
+                            <a href={"/mac"}>
+                                <div className={"flex flex-row gap-10"}>
+                                    <img src={mac} className={"w-10 h-8 mt-1 mr-1"}/>
+                                    <Button className={"bg-gradient-to-bl from-yellow-400 to-orange-600 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]"} radius={"full"}>MAC</Button>
+                                </div>
+                            </a>
                         </DropdownItem>
                         <DropdownItem key="team_settings">
-                            <div className={"flex flex-row gap-10"}>
-                                <img src={bk} className={"w-10 h-8 mt-1 mr-1"}/>
-                                <Button className={"bg-gradient-to-tl from-amber-700 to-orange-600 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]"} radius={"full"}>BK</Button>
-                            </div>
+                            <a href={"/bk"}>
+                                <div className={"flex flex-row gap-10"}>
+                                    <img src={bk} className={"w-10 h-8 mt-1 mr-1"}/>
+                                    <Button className={"bg-gradient-to-tl from-amber-700 to-orange-600 shadow-[0px_0px_6px_4px_rgba(0,_0,_0,_0.1)]"} radius={"full"}>BK</Button>
+                                </div>
+                            </a>
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
