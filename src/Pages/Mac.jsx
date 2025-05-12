@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import BlurCard from "../Components/UI/Card/BlurCard.jsx";
+import BlurCard from "../Components/Card/BlurCard.jsx";
+import Cupon from "../Components/Card/Cupon.jsx";
 
 const Mac = () => {
     const [bestCupons, setBestCupons] = useState([
@@ -29,13 +30,16 @@ const Mac = () => {
     return (
         <div className={"flex justify-center"}>
             <div className={"flex flex-col w-[77%] items-center"}>
+                <div className={"flex justify-center mt-20"}>
+                    <p className={"text-[70px] playwrite-dk-loopet-font"}>MacDonald's</p>
+                </div>
                 <div className={"flex flex-col mt-20 p-6 rounded-2xl bg-[#ffb03d]"}>
                     <p className={"text-white text-[40px] font-extrabold mb-4"}>ЛУЧШИЕ КУПОНЫ</p>
                     <div className={"flex flex-row flex-wrap gap-6"}>
                         {
                             bestCupons.map((item,index)=>(
                                 <div>
-                                    <BlurCard img={item.image} text={item.text} width={300} height={150} buttonText={"Перейти"}/>
+                                    <Cupon img={item.image} text={item.text} width={300} height={150}/>
                                 </div>
                             ))
                         }
@@ -47,7 +51,7 @@ const Mac = () => {
                         {
                             allCupons.map((item,index)=>(
                                 <div>
-                                    <BlurCard img={item.image} text={item.text} width={300} height={150} buttonText={"Перейти"}/>
+                                    <Cupon img={item.image} textColor={"black"} text={item.text} width={300} height={150} />
                                 </div>
                             ))
                         }
