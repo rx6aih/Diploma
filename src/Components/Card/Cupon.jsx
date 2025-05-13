@@ -5,7 +5,7 @@ import dislike from "../../Images/Cupon/dislike.svg"
 
 export default function Cupon({img, text ,textColor="white" , height=330, width=220, ref="/#"}) {
     return (
-        <Card isFooterBlurred className="border-none" radius="lg">
+        <Card isFooterBlurred className="border-none hover:opacity-90 opacity-100" radius="lg">
             <a href={ref}>
                 <Image
                     alt="Woman listing to music"
