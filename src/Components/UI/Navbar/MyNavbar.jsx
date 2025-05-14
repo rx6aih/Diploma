@@ -104,7 +104,7 @@ const MyNavbar = () => {
                         </DropdownTrigger>
                         <DropdownMenu aria-label="Profile Actions" variant="flat">
                             <DropdownItem key="settings" onPress={onOpen}>Мой Профиль</DropdownItem>
-                            <DropdownItem key="configurations">Мои Избранные</DropdownItem>
+                            <DropdownItem key="configurations" href={"/favorites"}>Мои Избранные</DropdownItem>
                             <DropdownItem key="logout" color="danger">
                                 Выйти
                             </DropdownItem>

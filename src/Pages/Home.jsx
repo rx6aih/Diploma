@@ -87,12 +87,12 @@ const Home = () => {
                 </div>
 
                 <div className={"flex flex-row gap-8 bg-[#ffb03d] rounded-3xl p-4 "}>
-                    <BlurCard img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
-                    <BlurCard img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
-                    <BlurCard img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
-                    <BlurCard img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
-                    <BlurCard img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
-                    <BlurCard img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
+                    <BlurCard textColor={"white"} img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
+                    <BlurCard textColor={"white"} img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
+                    <BlurCard textColor={"white"} img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
+                    <BlurCard textColor={"white"} img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
+                    <BlurCard textColor={"white"} img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
+                    <BlurCard textColor={"white"} img={sloganLogo} text={"Text"} buttonText={"Click!"}></BlurCard>
                 </div>
             </div>
         <div className={"flex flex-row mt-20"}>
@@ -121,8 +121,8 @@ const Home = () => {
                         <Button className={"mt-4 bg-gradient-to-r from-lime-300 to-lime-500"}>Перейти к купонам</Button>
                     </div>
                     <div className={"flex gap-10"}>
-                        <BlurCard img={kfcRestaurant} height={400} width={700} text={"KFC"} buttonText={"Перейти"}></BlurCard>
-                        <BlurCard img={macRestaurant} text={"MACDONALDS"} height={400} width={600} buttonText={"Перейти"}></BlurCard>
+                        <BlurCard img={kfcRestaurant} height={400} width={700} text={"KFC"} href={"https://rostics.ru/"} buttonText={"Перейти"}></BlurCard>
+                        <BlurCard img={macRestaurant} text={"MACDONALDS"} height={400} width={600} href={"https://vkusnoitochka.ru/"} buttonText={"Перейти"}></BlurCard>
                     </div>
                 </div>
             </div>
