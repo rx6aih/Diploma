@@ -40,8 +40,8 @@ const Analytic = () => {
     }
     return (
         <div className={"flex w-full justify-center mb-[0em] z-10"}>
-            <div className={"w-[135em] flex overflow-auto gap-10"}>
-                <div className={"flex w-[80%] mt-20 bg-zinc-200/30 rounded-xl p-2"}>
+            <div className={"w-[105em] flex overflow-auto "}>
+                <div className={"flex w-[100%] mt-20 bg-zinc-200/30 rounded-xl p-4"}>
                     <div className={"flex flex-row bg-zinc-300/20 rounded-xl p-4 border-3 border-zinc-500/20 shadow-lg"}>
                         <div className={"mr-40"}>
                             <p className={"text-[36px] text-black ml-12 mr-24 mb-10"}>Лучшие купоны КФС</p>
@@ -84,7 +84,7 @@ const Analytic = () => {
                 <div className={"flex w-[80%] mt-20 bg-zinc-200/30 rounded-xl p-2"}>
                     <div className={"flex flex-row bg-zinc-300/20 rounded-xl p-4 border-3 border-zinc-500/20 shadow-lg"}>
                         <div className={"mr-40"}>
-                            <p className={"text-[36px] text-black ml-12 mr-24 mb-10"}>Лучшие купоны КФС</p>
+                            <p className={"text-[36px] text-black ml-12 mr-24 mb-10"}>Лучшие купоны MacDonalds</p>
                             <PieChart
                                 onItemClick={(event, data) => some(event,data)}
                                 series={[

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import BlurCard from "../Components/Card/BlurCard.jsx";
 import Cupon from "../Components/Card/Cupon.jsx";
 
@@ -9,24 +9,15 @@ const Mac = () => {
         {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/tri-produkta-na-vibor-475x260.webp", text:"Три продукта на выбор"},
         {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/tri-produkta-na-vibor-475x260.webp", text:"Три продукта на выбор"},
     ])
+    const [allCupons, setAllCupons] = useState([]);
 
-    const [allCupons, setAllCupons] = useState([
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/fish-stiks-po-akcii-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/tri-produkta-na-vibor-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/tri-produkta-na-vibor-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/fish-stiks-po-akcii-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/fish-stiks-po-akcii-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/tri-produkta-na-vibor-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/tri-produkta-na-vibor-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/fish-stiks-po-akcii-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/fish-stiks-po-akcii-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/tri-produkta-na-vibor-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/tri-produkta-na-vibor-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/fish-stiks-po-akcii-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/fish-stiks-po-akcii-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/tri-produkta-na-vibor-475x260.webp", text:"Три продукта на выбор"},
-        {image: "https://vkusnotochkamenu.ru/image/cachewebp/catalog/blog/tri-produkta-na-vibor-475x260.webp", text:"Три продукта на выбор"},
-    ])
+    useEffect(() => {
+        fetch('http://localhost:5022/Cupons/MacCupons')
+            .then(response => response.json())
+            .then(data => setAllCupons(data))
+            .catch(error => console.error(error))
+    }, []);
+
     return (
         <div className={"flex justify-center"}>
             <div className={"flex flex-col w-[77%] items-center"}>
@@ -51,7 +42,7 @@ const Mac = () => {
                         {
                             allCupons.map((item,index)=>(
                                 <div>
-                                    <Cupon img={item.image} textColor={"black"} text={item.text} width={300} height={150} />
+                                    <Cupon img={item.imageUrl} textColor={"black"} text={item.title} width={300} height={150} />
                                 </div>
                             ))
                         }
