@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "czrpPpoNHag=",
+  "dgSpecHash": "PfPnhNJYMuc=",
   "success": true,
   "projectFilePath": "C:\\Users\\frolkin.yu\\RiderProjects\\Diploma\\Diploma.Parser\\Diploma.Parser.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,7 @@
     "C:\\Users\\frolkin.yu\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\frolkin.yu\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
     "C:\\Users\\frolkin.yu\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
-    "C:\\Users\\frolkin.yu\\.nuget\\packages\\selenium.webdriver\\4.31.0\\selenium.webdriver.4.31.0.nupkg.sha512",
+    "C:\\Users\\frolkin.yu\\.nuget\\packages\\selenium.webdriver\\4.33.0\\selenium.webdriver.4.33.0.nupkg.sha512",
     "C:\\Users\\frolkin.yu\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
     "C:\\Users\\frolkin.yu\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\frolkin.yu\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",

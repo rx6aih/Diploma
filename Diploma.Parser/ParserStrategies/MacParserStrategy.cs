@@ -13,7 +13,6 @@ public class MacParserStrategy : IParserStrategy<MacCupon>
 
     public Task<List<MacCupon>> GetElementsList(string elementsClassName, ChromeDriver driver)
     {
-        
         WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
         ReadOnlyCollection<IWebElement> cuponsListMarkup = wait.Until(
             SeleniumExtras.WaitHelpers.ExpectedConditions.PresenceOfAllElementsLocatedBy(

@@ -13,4 +13,18 @@ public class ReactionService(IRepository<ReactionOnCupon> reactRepository, Cupon
         await reactRepository.CreateAsync(reaction);
         await cuponDetailsRepository.UpdateDetailsAsync(reaction);
     }
+
+    public async Task<int> GetReactions(int cuponId)
+    {
+        return reactRepository.GetItemsAsync()
+            .Result.Count(x => 
+                x.CuponId == cuponId);
+    }
+
+    public async Task<int> GetConcreteReaction(int cuponId, string type)
+    {
+        return reactRepository.GetItemsAsync().Result.Count(x=> 
+            x.CuponId == cuponId &&
+            x.ReactionType.ToString() == type);
+    }
 }

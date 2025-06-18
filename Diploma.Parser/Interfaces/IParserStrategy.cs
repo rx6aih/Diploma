@@ -10,7 +10,9 @@ public interface IParserStrategy<T>
         foreach(string option in options)
             chromeOptions.AddArguments(option);
         
-        ChromeDriver driver = new ChromeDriver(chromeOptions);
+        chromeOptions.AddArguments("no-sandbox");
+        
+        ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(),chromeOptions, TimeSpan.FromSeconds(120));
         driver.Navigate().GoToUrl(url);
         return Task.FromResult(driver);
     }

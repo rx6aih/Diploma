@@ -13,7 +13,7 @@ public class KfcParserStrategy : IParserStrategy<KfcCupon>
     public Task<List<KfcCupon>> GetElementsList(string elementsClassName, ChromeDriver driver)
     {
         
-        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(100));
         ReadOnlyCollection<IWebElement> cuponsListMarkup = wait.Until(
             SeleniumExtras.WaitHelpers.ExpectedConditions.PresenceOfAllElementsLocatedBy(
             By.ClassName(elementsClassName)));

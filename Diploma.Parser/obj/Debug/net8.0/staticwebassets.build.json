@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "pKw5QEQIMMRLowZNAp6TfY6jW7rS4Vj6ekaonGWfPH8=",
+  "Hash": "vCikrulYuetcKQ8Zztz1mD11pP5Yjy8jTMNpg4p02b0=",
   "Source": "Diploma.Parser",
   "BasePath": "_content/Diploma.Parser",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

@@ -19,7 +19,6 @@ public class CuponController(CuponManagerContext context, IDistributedCache cach
         CuponService <BkCupon> service = new CuponService<BkCupon>(new Repository<BkCupon>(context), cache);
         return Ok(await service.GetCupons());
     }
-    
     [HttpGet]
     [Route("KfcCupons")]
     public async Task<IActionResult> GetKfcCupons()
@@ -27,7 +26,6 @@ public class CuponController(CuponManagerContext context, IDistributedCache cach
         CuponService <KfcCupon> service = new CuponService<KfcCupon>(new Repository<KfcCupon>(context), cache);
         return Ok(await service.GetCupons());
     }
-    
     [HttpGet]
     [Route("MacCupons")]
     public async Task<IActionResult> GetMacCupons()
@@ -35,10 +33,10 @@ public class CuponController(CuponManagerContext context, IDistributedCache cach
         CuponService <MacCupon> service = new CuponService<MacCupon>(new Repository<MacCupon>(context), cache);
         return Ok(await service.GetCupons());
     }
-
     [HttpPut]
     [Route("UpdateCupon")]
-    public async Task<IActionResult> UpdateCupon([FromBody]Cupon cupon,[FromQuery]CuponType cuponType, CancellationToken cancellationToken = default)
+    public async Task<IActionResult> UpdateCupon([FromBody]Cupon cupon
+        ,[FromQuery]CuponType cuponType, CancellationToken cancellationToken = default)
     {
         switch (cuponType)
         {
@@ -63,10 +61,10 @@ public class CuponController(CuponManagerContext context, IDistributedCache cach
             }
         }
     }
-    
     [HttpDelete]
     [Route("DeleteCupon")]
-    public async Task<IActionResult> DeleteCuponAsync([FromQuery]int cuponId, [FromQuery]CuponType type, CancellationToken cancellationToken = default)
+    public async Task<IActionResult> DeleteCuponAsync([FromQuery]int cuponId
+        , [FromQuery]CuponType type, CancellationToken cancellationToken = default)
     {
         switch (type)
         {

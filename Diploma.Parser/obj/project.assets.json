@@ -429,7 +429,7 @@
           }
         }
       },
-      "Selenium.WebDriver/4.31.0": {
+      "Selenium.WebDriver/4.33.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/WebDriver.dll": {
@@ -1307,10 +1307,10 @@
         "postgresql.png"
       ]
     },
-    "Selenium.WebDriver/4.31.0": {
-      "sha512": "RT5Pg6UVyxe/+S/H808VAbfXX4kHQdvo/U28oViwUcCpC4WL7zHq2GgxY/b9zNLTcwJ8zfqu+WmHPifkTx+BCQ==",
+    "Selenium.WebDriver/4.33.0": {
+      "sha512": "5dzwA1cMorwYWudX46zyeUqyZn48TZeCHbSERxbpKezGxZ8hMBpcL12XwG4RGUuQKGH8FiEOJOFK4eCE//uNpQ==",
       "type": "package",
-      "path": "selenium.webdriver/4.31.0",
+      "path": "selenium.webdriver/4.33.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1325,7 +1325,7 @@
         "manager/linux/selenium-manager",
         "manager/macos/selenium-manager",
         "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.31.0.nupkg.sha512",
+        "selenium.webdriver.4.33.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
@@ -1487,7 +1487,7 @@
       "Confluent.Kafka >= 2.8.0",
       "Diploma.DAL >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.12",
-      "Selenium.WebDriver >= 4.31.0",
+      "Selenium.WebDriver >= 4.33.0",
       "SeleniumExtras.WaitHelpers >= 1.0.2",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -1556,7 +1556,7 @@
           },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[4.31.0, )"
+            "version": "[4.33.0, )"
           },
           "SeleniumExtras.WaitHelpers": {
             "target": "Package",

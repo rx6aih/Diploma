@@ -16,11 +16,23 @@ builder.Services.AddStackExchangeRedisCache(options =>
 });
 builder.Services.AddHostedService<ConsumerService>();
 builder.Services.AddDal();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("ClientPermission", policy =>
+    {
+        policy.AllowAnyHeader()
+            .AllowAnyMethod()
+            .SetIsOriginAllowed(_ => true)
+            .AllowCredentials();
+    });
+});
+
 var app = builder.Build();
 using var scope = app.Services.CreateScope();
 await using var dbContext = scope.ServiceProvider.GetRequiredService<CuponManagerContext>();
-dbContext.Database.EnsureDeleted();
-dbContext.Database.EnsureCreated();
+
+app.UseCors("ClientPermission");
 app.UseSwagger();
 app.UseSwaggerUI();
 app.MapControllers();

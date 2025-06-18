@@ -476,7 +476,7 @@
           }
         }
       },
-      "Selenium.WebDriver/4.29.0": {
+      "Selenium.WebDriver/4.33.0": {
         "type": "package",
         "compile": {
           "lib/net8.0/WebDriver.dll": {
@@ -1431,10 +1431,10 @@
         "pipelines.sockets.unofficial.nuspec"
       ]
     },
-    "Selenium.WebDriver/4.29.0": {
-      "sha512": "bxUeeyGPoPFqqZX/RQAmcuE8fvdi08ep9519rFpONfC/rmBemezfCbbwDKPLE0xkb/cW1asH5WbDYLXs5giVeg==",
+    "Selenium.WebDriver/4.33.0": {
+      "sha512": "5dzwA1cMorwYWudX46zyeUqyZn48TZeCHbSERxbpKezGxZ8hMBpcL12XwG4RGUuQKGH8FiEOJOFK4eCE//uNpQ==",
       "type": "package",
-      "path": "selenium.webdriver/4.29.0",
+      "path": "selenium.webdriver/4.33.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1449,7 +1449,7 @@
         "manager/linux/selenium-manager",
         "manager/macos/selenium-manager",
         "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.29.0.nupkg.sha512",
+        "selenium.webdriver.4.33.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
@@ -1648,7 +1648,7 @@
       "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.12",
       "Microsoft.Extensions.Caching.StackExchangeRedis >= 9.0.2",
-      "Selenium.WebDriver >= 4.29.0",
+      "Selenium.WebDriver >= 4.33.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -1727,7 +1727,7 @@
           },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[4.29.0, )"
+            "version": "[4.33.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

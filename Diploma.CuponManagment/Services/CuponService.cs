@@ -8,22 +8,20 @@ using Microsoft.Extensions.Caching.Distributed;
 
 namespace Diploma.API.Services;
 
-public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistributedCache cache) where TCupon : Cupon
+public class CuponService<TCupon>(IRepository<TCupon> cuponRepository,
+    IDistributedCache cache) where TCupon : Cupon
 {                               
     private IDistributedCache _cache = cache;
-                                        
     public async Task<List<TCupon>> GetCuponsFromCache()                                                                                                
     {
         string todayCacheKey = typeof(TCupon).Name + DateTime.UtcNow.Day;                                                                                                                                                                                           
         return await _cache.GetRecordAsync<List<TCupon>>(todayCacheKey) ?? new List<TCupon>();
     }
-
     public async Task SetCuponsToCache(List<TCupon> cupons)
     {
         string todayCacheKey = typeof(TCupon).Name + DateTime.Now.Day;
         await cache.SetRecordAsync(todayCacheKey, cupons);
     }
-
     public async Task<List<TCupon>> GetCupons()
     {
         var cupons = await GetCuponsFromCache();
@@ -34,7 +32,10 @@ public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistribu
         List<TCupon>? cuponsFromParser = JsonSerializer.Deserialize<List<TCupon>>(communicator
             .Send("http://localhost:5042", $"Parser/{typeof(TCupon).Name}", HttpMethod.Get)
             .Result.Content.ReadAsStringAsync().Result);
-
+        
+        var result = communicator.Send("http://localhost:5042", $"Parser/{typeof(TCupon).Name}", HttpMethod.Get)
+            .Result.Content.ReadAsStringAsync().Result;
+        
         if (cuponsFromParser == null)
             return new List<TCupon>();
         
@@ -45,8 +46,8 @@ public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistribu
         
         return cuponsFromParser;
     }
-
-    public async Task<bool> UpdateCuponAsync(TCupon newCupon, CancellationToken cancellationToken = default)
+    public async Task<bool> UpdateCuponAsync(TCupon newCupon,
+        CancellationToken cancellationToken = default)
     {
         TCupon? cupon = await cuponRepository.GetItemByIdAsync(newCupon.Id, cancellationToken);
         if(cupon == null)
@@ -54,8 +55,8 @@ public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistribu
         await cuponRepository.UpdateAsync(cupon, newCupon.Id, cancellationToken);
         return true;
     }
-
-    public async Task<bool> DeleteCuponAsync(int id, CancellationToken cancellationToken = default)
+    public async Task<bool> DeleteCuponAsync(int id,
+        CancellationToken cancellationToken = default)
     {
         TCupon? cupon = await cuponRepository.GetItemByIdAsync(id, cancellationToken);
         if(cupon == null)
@@ -63,8 +64,8 @@ public class CuponService<TCupon>(IRepository<TCupon> cuponRepository, IDistribu
         await cuponRepository.DeleteAsync(cupon, cancellationToken);
         return true;
     }
-
-    public async Task<bool> LikeCuponAsync(TCupon likeCupon, CancellationToken cancellationToken = default)
+    public async Task<bool> LikeCuponAsync(TCupon likeCupon,
+        CancellationToken cancellationToken = default)
     {
         TCupon? cupon = await cuponRepository.GetItemByIdAsync(likeCupon.Id, cancellationToken);
         if(cupon == null)
